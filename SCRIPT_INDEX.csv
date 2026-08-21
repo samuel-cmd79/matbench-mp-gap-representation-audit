@@ -1,0 +1,33 @@
+filename,publication_status,category,role,source_path
+mp_gap_baseline_v1.ipynb,legacy-diagnostic,legacy-diagnostic,Pre-freeze Level-1 baseline notebook retained for provenance only,archive/legacy_diagnostic/mp_gap_baseline_v1.ipynb
+mp_gap_baseline_v2.ipynb,legacy-diagnostic,legacy-diagnostic,Old-imputation Level-2 baseline notebook whose raw outputs are diagnostic only,archive/legacy_diagnostic/mp_gap_baseline_v2.ipynb
+mp_gap_baseline_v1_run0709.ipynb,frozen-notebook,training,Frozen Level-1 RF and XGBoost training notebook,notebooks/mp_gap_baseline_v1_run0709.ipynb
+mp_gap_baseline_v2_run0709.ipynb,frozen-notebook,training,Frozen Level-2 RF and XGBoost training notebook,notebooks/mp_gap_baseline_v2_run0709.ipynb
+analyze_l1_bandcenter_l2_l3_error_tails.py,release-ready,analysis,"Quantiles, SSE concentration, and exact boundary counts",scripts/analyze_l1_bandcenter_l2_l3_error_tails.py
+bandgap_error_analysis_v8.py,release-ready,analysis,Final binned-error and quantile figures,scripts/bandgap_error_analysis_v8.py
+check_features_v3.py,release-ready,audit,Structural-featurizer failure and missingness audit,scripts/check_features_v3.py
+check_octahedral_tm_confound_2.py,release-ready,audit,Transition-metal-stratified octahedral confounding check,scripts/check_octahedral_tm_confound_2.py
+check_zero_gap_delta_stability_v1_v2_gnn_npz_fixed.py,release-ready,audit,Zero-gap paired endpoint and fold-stability analysis,scripts/check_zero_gap_delta_stability_v1_v2_gnn_npz_fixed.py
+v4_alignn_matbench_mp_gap_angle_zero_fold0.py,release-ready-colab,training,Fold-0 configuration-matched numerical angle-mask control,scripts/colab/v4_alignn_matbench_mp_gap_angle_zero_fold0.py
+v4_alignn_matbench_mp_gap_fixed_final_fi.py,release-ready-colab,training,Google Colab five-fold ALIGNN training pipeline,scripts/colab/v4_alignn_matbench_mp_gap_fixed_final_fi.py
+compare_l1_bandcenter_l2_l3.py,release-ready,analysis,Final four-model aligned comparison,scripts/compare_l1_bandcenter_l2_l3.py
+evaluate_and_clip_v4.py,release-ready,evaluation,Angle-mask fold-0 raw and clipped prediction evaluation,scripts/evaluate_and_clip_v4.py
+export_labels_by_fold.py,release-ready,audit,Export official test labels by fold,scripts/export_labels_by_fold.py
+train_ids_export.py,provenance-only,provenance,One-off export of official outer-training identifiers for gnn_export provenance,scripts/train_ids_export.py
+mp_gap_ablation.py,release-ready,training,Symmetry and coordination-fingerprint deletion retraining,scripts/mp_gap_ablation.py
+mp_gap_replay_fold0_curve.py,release-ready,replay,Deterministic Level-2 fold-0 learning-curve replay,scripts/mp_gap_replay_fold0_curve.py
+mp_gap_replay_v2_allfold_training_info.py,release-ready,replay,All-fold Level-2 training-information replay,scripts/mp_gap_replay_v2_allfold_training_info.py
+neg_and_family_analysis_v4.py,release-ready,analysis,Raw boundary distribution and chemical-family analysis,scripts/neg_and_family_analysis_v4.py
+polymorph_bound_fold_conditioned_v3.py,release-ready,analysis,Final fold-conditioned repeated-composition oracle,scripts/polymorph_bound_fold_conditioned_v3.py
+r2_three_versions.py,release-ready,audit,Per-fold and pooled R-squared conventions,scripts/r2_three_versions.py
+raw_provenance_audit.py,release-ready,audit,Layered raw-prediction provenance audit,scripts/raw_provenance_audit.py
+finalize_repository_release.py,release-ready,release,Validate the public tree and generate deterministic release metadata,scripts/release/finalize_repository_release.py
+prepare_zenodo_data_release.py,release-ready,release,Validate and package the two external Zenodo data bundles,scripts/release/prepare_zenodo_data_release.py
+remake_shap_figs_english.py,release-ready,figures,English Level-2 XGBoost fold-0 SHAP renderer,scripts/remake_shap_figs_english.py
+remake_shap_figs_english_v2.py,release-ready,figures,English Level-2 RF fold-0 SHAP renderer,scripts/remake_shap_figs_english_v2.py
+shap_crossfold_aggregate_audited_v3.py,release-ready,analysis,Final audited cross-fold SHAP aggregation,scripts/shap_crossfold_aggregate_audited_v3.py
+subset_robustness_check.py,release-ready,audit,Complete-versus-incomplete feature subset robustness analysis,scripts/subset_robustness_check.py
+train_l1_plus_bandcenter.py,release-ready,training,Level-1 plus BandCenter control,scripts/train_l1_plus_bandcenter.py
+verify_deletion_per_fold.py,release-ready,audit,Per-fold verification of deletion-retraining responses,scripts/verify_deletion_per_fold.py
+xgb_training_summary_table.py,release-ready,replay,Frozen Level-1 XGBoost training summary table,scripts/xgb_training_summary_table.py
+xgb_training_summary_table_v2_replay.py,release-ready,replay,Level-2 XGBoost replay summary table,scripts/xgb_training_summary_table_v2_replay.py

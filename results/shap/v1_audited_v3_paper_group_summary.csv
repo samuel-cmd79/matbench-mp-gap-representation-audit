@@ -1,0 +1,11 @@
+Feature group,n columns,Group SHAP share,Mean share/column,Deletion ΔMAE
+Periodic position (comp),24,17.770065307617,0.740419387817,NA
+d/p electron count (comp),24,17.726634979248,0.738609790802,NA
+Atomic size (comp),24,14.206744194031,0.591947674751,NA
+Bond strength (comp),6,13.710775375366,2.285129229228,NA
+Unfilled orbitals (comp),30,11.761259078979,0.392041969299,NA
+Ionicity,6,9.630921363831,1.605153560638,NA
+Band-gap prior (comp),6,6.698757171631,1.116459528605,NA
+Valence total (comp),6,6.072329998016,1.012054999669,NA
+Magnetic moment (comp),6,2.422507524490,0.403751254082,NA
+Structural total,0,0.000000000000,NA,NA

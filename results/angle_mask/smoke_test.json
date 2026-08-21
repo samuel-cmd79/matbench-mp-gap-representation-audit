@@ -1,0 +1,6 @@
+{
+  "passed": true,
+  "masked_angle_max_abs": 0.0,
+  "prediction_max_abs_diff": 0.0005114078521728516,
+  "probe_batch_size": 1
+}

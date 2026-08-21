@@ -1,0 +1,36 @@
+# Large external reproduction data
+/gnn_export/
+/matbench_cache/
+
+# Local rerun outputs
+/reproduction_runs/
+
+# Release/reviewer staging artifacts
+/_release_work/
+/reviewer_packages/
+/mp_gap_reviewer_code_*
+/README_SNAPSHOT.md
+/MISSING_FILES.md
+/tree.txt
+/public_tree.txt
+
+# External-data archives should be created outside the repository
+/gnn_export*.zip
+/gnn_export*.tar.gz
+/gnn_export*.tar.zst
+/matbench_cache*.zip
+/matbench_cache*.tar.gz
+/matbench_cache*.tar.zst
+/mp_gap_gnn_export_*.tar.gz
+/mp_gap_matbench_cache_*.tar.gz
+/mp_gap_zenodo_data_*/
+/mp_gap_repo_text_review_*.tar.gz
+
+# Python, Jupyter, editor, and OS files
+__pycache__/
+*.py[cod]
+.ipynb_checkpoints/
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/

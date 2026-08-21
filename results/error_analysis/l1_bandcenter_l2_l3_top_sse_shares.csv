@@ -1,0 +1,9 @@
+model,features,top_fraction,top_percent,n_total,n_selected_ceil,selection_rule,selected_sse,total_sse,selected_sse_share
+Level 1,132,0.01,1.0,106113,1062,absolute_error descending; sample_id ascending for boundary ties,9951.861267570872,36592.64625965554,0.2719634212009173
+Level 1,132,0.05,5.0,106113,5306,absolute_error descending; sample_id ascending for boundary ties,20867.923251538254,36592.64625965554,0.5702764184766201
+Level 1 + BandCenter,133,0.01,1.0,106113,1062,absolute_error descending; sample_id ascending for boundary ties,9974.339581363209,36702.05891340256,0.2717651237195541
+Level 1 + BandCenter,133,0.05,5.0,106113,5306,absolute_error descending; sample_id ascending for boundary ties,20919.87360262392,36702.05891340256,0.5699918266706442
+Level 2,283,0.01,1.0,106113,1062,absolute_error descending; sample_id ascending for boundary ties,6746.81959191287,26396.85573446725,0.2555917894078318
+Level 2,283,0.05,5.0,106113,5306,absolute_error descending; sample_id ascending for boundary ties,14818.908864779889,26396.85573446725,0.5613891674768805
+Level 3,N/A,0.01,1.0,106113,1062,absolute_error descending; sample_id ascending for boundary ties,13118.530147884716,23426.104260731638,0.5599962333419155
+Level 3,N/A,0.05,5.0,106113,5306,absolute_error descending; sample_id ascending for boundary ties,20114.250721404263,23426.104260731638,0.85862551013747

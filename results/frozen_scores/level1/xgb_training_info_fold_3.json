@@ -1,0 +1,21 @@
+{
+  "fold": 3,
+  "best_iteration": 7999,
+  "best_validation_mae": 0.34362869943739077,
+  "early_stopping_rounds": 200,
+  "total_rounds_evaluated": 8000,
+  "final_val_mae": 0.34362869943739077,
+  "params": {
+    "objective": "reg:squarederror",
+    "eval_metric": "mae",
+    "eta": 0.03,
+    "max_depth": 6,
+    "min_child_weight": 5,
+    "subsample": 0.8,
+    "colsample_bytree": 0.8,
+    "lambda": 1.0,
+    "alpha": 0.001,
+    "tree_method": "hist",
+    "seed": 42
+  }
+}

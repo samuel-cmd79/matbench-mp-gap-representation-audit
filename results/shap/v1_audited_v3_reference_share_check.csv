@@ -1,0 +1,4 @@
+Feature group,metric,reference,calculated,absolute difference,absolute tolerance,status,scope
+All mutually exclusive groups,Group SHAP shares sum (%),100.000000000000,99.999992370605,0.000007629395,0.000005000000,NO MATCH,L1 composition-only audit
+BandCenter (L2 only),n columns,0.000000000000,0.000000000000,0.000000000000,0.000000000000,MATCH,L1 composition-only audit
+Ionicity,n columns,6.000000000000,6.000000000000,0.000000000000,0.000000000000,MATCH,L1 composition-only audit

@@ -1,0 +1,4 @@
+Subset,n,P50_reduction_factor_L1_to_L3,MAE_reduction_factor_L1_to_L3,P99_change_eV_L3_minus_L1,P99_change_%_L3_vs_L1,ExactZero_change_percentage_points,Top1%_SSE_ratio_L3_to_L1,Top1%_SSE_share_change_percentage_points
+ALL,106113,4.32373286,1.88041365,0.08980286,4.05516092,3.49438806,1.31819866,28.80328121
+zero-gap (Eg=0),46151,43.72354298,2.13525818,0.19713902,9.34669099,8.03449546,1.39682337,28.10443174
+non-zero-gap (Eg>0),59962,2.46900587,1.81671211,0.01151506,0.50282049,0.00000000,1.26973328,26.81586557

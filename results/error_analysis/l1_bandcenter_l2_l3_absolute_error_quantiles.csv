@@ -1,0 +1,5 @@
+model,features,n_samples,absolute_error_p50,absolute_error_p90,absolute_error_p99,absolute_error_max,max_tie_count,max_sample_ids,quantile_method
+Level 1,132,106113,0.1623113950729369,0.9028239823150639,2.2145326029968317,7.516180992126465,1,mb-mp-gap-070214,numpy.quantile default linear interpolation
+Level 1 + BandCenter,133,106113,0.16243251266479497,0.9056162471389775,2.211449243042008,7.5262556076049805,1,mb-mp-gap-070214,numpy.quantile default linear interpolation
+Level 2,283,106113,0.12737786262333461,0.7852134973907468,1.8700596591033978,6.029141426086426,1,mb-mp-gap-000817,numpy.quantile default linear interpolation
+Level 3,N/A,106113,0.037539644622802903,0.43755953338623027,2.3043354636535756,7.067975997924805,1,mb-mp-gap-057832,numpy.quantile default linear interpolation

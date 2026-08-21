@@ -1,0 +1,9 @@
+model,features,true_label_class,pred_lt_0_1_count,pred_0_1_to_0_5_count,pred_gt_0_5_count,row_total
+Level 1,132,true zero (y == 0),33720,7469,4962,46151
+Level 1,132,true nonzero (y > 0),2388,6686,50888,59962
+Level 1 + BandCenter,133,true zero (y == 0),33670,7535,4946,46151
+Level 1 + BandCenter,133,true nonzero (y > 0),2396,6674,50892,59962
+Level 2,283,true zero (y == 0),35370,6563,4218,46151
+Level 2,283,true nonzero (y > 0),2582,5997,51383,59962
+Level 3,N/A,true zero (y == 0),42435,1858,1858,46151
+Level 3,N/A,true nonzero (y > 0),5028,5855,49079,59962

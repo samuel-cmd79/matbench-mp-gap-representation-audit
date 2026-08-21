@@ -1,0 +1,13 @@
+subset,subset_definition,model,features,n_samples,clipped_mae
+full_set,all official test samples,Level 1,132,106113,0.3379655364675104
+full_set,all official test samples,Level 1 + BandCenter,133,106113,0.3384770430085926
+full_set,all official test samples,Level 2,283,106113,0.28549739606370517
+full_set,all official test samples,Level 3,N/A,106113,0.17972935701604
+zero_gap,true_label == 0.0 exactly,Level 1,132,46151,0.17645525133441292
+zero_gap,true_label == 0.0 exactly,Level 1 + BandCenter,133,46151,0.17722820408401838
+zero_gap,true_label == 0.0 exactly,Level 2,283,46151,0.14621182045463496
+zero_gap,true_label == 0.0 exactly,Level 3,N/A,46151,0.08263883646615938
+nonzero_gap,true_label != 0.0 exactly,Level 1,132,59962,0.46227528546149954
+nonzero_gap,true_label != 0.0 exactly,Level 1 + BandCenter,133,59962,0.46258556449233296
+nonzero_gap,true_label != 0.0 exactly,Level 2,283,59962,0.3927014352874501
+nonzero_gap,true_label != 0.0 exactly,Level 3,N/A,59962,0.25445709481493833

@@ -1,0 +1,3 @@
+Feature group,MAE full L2,MAE group deleted,Deletion ΔMAE,definition,interpretation
+Global symmetry,0.285497461181496,0.314198674118893,0.028701212937397,MAE(group deleted) - MAE(full L2),deletion worsens MAE
+Coordination fingerprint,0.285497461181496,0.280182818210155,-0.005314642971341,MAE(group deleted) - MAE(full L2),deletion improves MAE

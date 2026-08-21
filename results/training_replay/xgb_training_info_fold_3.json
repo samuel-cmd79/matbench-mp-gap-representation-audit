@@ -1,0 +1,15 @@
+{
+  "total_rounds_evaluated": 8000,
+  "best_iteration": 7999,
+  "best_validation_mae": 0.2947116408687909,
+  "final_val_mae": 0.2947116408687909,
+  "early_stopping_rounds": 200,
+  "num_boost_round_budget": 8000,
+  "fold_analysis_0idx": 2,
+  "fold_file_1idx": 3,
+  "seed": 42,
+  "frozen_prediction_file": "../matbench_outputs_v2_run0709/predictions_xgb/pred_fold_2.npy",
+  "frozen_prediction_exact_match": true,
+  "prediction_max_abs_diff": 0.0,
+  "prediction_count": 21223
+}

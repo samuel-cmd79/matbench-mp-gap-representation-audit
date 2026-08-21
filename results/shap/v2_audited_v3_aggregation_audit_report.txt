@@ -1,0 +1,71 @@
+Corrected L2 SHAP aggregation and L1-to-L2 transfer audit
+========================================================
+L1 SHAP directory: ../outputs_v1_run0709
+L2 SHAP directory: ../matbench_outputs_v2_run0709
+Model: xgb
+Folds: [0, 1, 2, 3, 4]
+L1 samples by fold: [3000, 3000, 3000, 3000, 3000]
+L2 samples by fold: [3000, 3000, 3000, 3000, 3000]
+Aggregation method: normalize within each fold, then average the five folds equally
+
+Grouping audit
+--------------
+L2 feature columns: 283 / expected 283
+Duplicate feature-name rows: 0
+Overlapping specific-rule rows: 0
+Generic fallback counts: {'structure fallback': 1}
+BandCenter assigned group(s): ['BandCenter (L2 only)']
+Structural groups: Global symmetry | Coordination fingerprint | Bond length / packing | Chemical ordering | Dimensionality | Other structure
+BandCenter included in structural total: False
+
+Deletion ablation
+-----------------
+Definition: Deletion ΔMAE = MAE(group deleted) - MAE(full L2).
+Positive means deletion worsens MAE; negative means deletion improves MAE.
+           Feature group  MAE full L2  MAE group deleted  Deletion ΔMAE                        definition        interpretation
+         Global symmetry     0.285497           0.314199       0.028701 MAE(group deleted) - MAE(full L2)  deletion worsens MAE
+Coordination fingerprint     0.285497           0.280183      -0.005315 MAE(group deleted) - MAE(full L2) deletion improves MAE
+Only symmetry and coordination receive deletion values; all other groups remain NA in the final table.
+
+Attribution transfer
+--------------------
+Only exact-name composition features common to L1 and L2 are compared.
+BandCenter is excluded. Ionicity must be the same six Electronegativity features in both levels.
+A_level(group) = sum over common group columns of mean_folds(mean_samples(|SHAP|)).
+Transfer (%) = 100 * (A_L2 - A_L1) / A_L1; A_L1 is the denominator.
+Transfer metadata: {'n common composition features': 132, 'BandCenter excluded': True, 'Ionicity feature count': 6, 'Ionicity features': 'MagpieData avg_dev Electronegativity | MagpieData maximum Electronegativity | MagpieData mean Electronegativity | MagpieData minimum Electronegativity | MagpieData mode Electronegativity | MagpieData range Electronegativity', 'Ionicity transfer change (%)': -20.12044971479066, 'Original -20.1% holds after rounding': True, 'formula': '100 * (A_L2 - A_L1) / A_L1'}
+            Feature group  n common columns  A_L1 = sum absolute mean(|SHAP|)  A_L2 = sum absolute mean(|SHAP|)  L1 denominator  transfer change (%)                    formula
+       Atomic size (comp)                24                          0.461322                          0.255404        0.461322           -44.636509 100 * (A_L2 - A_L1) / A_L1
+ Periodic position (comp)                24                          0.577444                          0.317896        0.577444           -44.947637 100 * (A_L2 - A_L1) / A_L1
+                 Ionicity                 6                          0.312731                          0.249808        0.312731           -20.120450 100 * (A_L2 - A_L1) / A_L1
+    Band-gap prior (comp)                 6                          0.217528                          0.077339        0.217528           -64.446570 100 * (A_L2 - A_L1) / A_L1
+   Magnetic moment (comp)                 6                          0.078661                          0.046352        0.078661           -41.073918 100 * (A_L2 - A_L1) / A_L1
+     Bond strength (comp)                 6                          0.445369                          0.381727        0.445369           -14.289637 100 * (A_L2 - A_L1) / A_L1
+ Unfilled orbitals (comp)                30                          0.381926                          0.219499        0.381926           -42.528390 100 * (A_L2 - A_L1) / A_L1
+     Valence total (comp)                 6                          0.197194                          0.105754        0.197194           -46.370443 100 * (A_L2 - A_L1) / A_L1
+d/p electron count (comp)                24                          0.575599                          0.446244        0.575599           -22.473177 100 * (A_L2 - A_L1) / A_L1
+
+Interpretation guardrails
+-------------------------
+Mean share/column = group share / n columns. It is an attribution density descriptor, not a corrected or causal attribution.
+Structural total is a subtotal and must not be added again when checking whether mutually exclusive groups sum to 100%.
+SHAP share is never substituted for Deletion ΔMAE.
+
+Reference group checks
+----------------------
+       Feature group                       metric  reference  calculated  rounding decimals  absolute difference  absolute tolerance status
+BandCenter (L2 only)                    n columns   1.000000    1.000000                  0         0.000000e+00            0.000000  MATCH
+BandCenter (L2 only)         Group SHAP share (%)   0.642706    0.642706                  6         2.749863e-07            0.000005  MATCH
+            Ionicity                    n columns   6.000000    6.000000                  0         0.000000e+00            0.000000  MATCH
+            Ionicity         Group SHAP share (%)   6.286173    6.286172                  6         6.100159e-07            0.000005  MATCH
+            Ionicity Mean share/column (%/column)   1.047696    1.047695                  6         6.016693e-07            0.000005  MATCH
+
+Structural-total check
+----------------------
+                                             aggregation method  calculated structural total (%)  reference structural total (%)  complete total absolute difference  complete total absolute tolerance complete total status  n columns  BandCenter included  major four structural groups (%)  major four rounded reference (%) major four status  Dimensionality + Other structure (%)  secondary rounded reference (%) secondary status status
+normalize within each fold, then average the five folds equally                         46.50592                        46.50592                        4.101562e-07                           0.000005                 MATCH        150                False                         46.247944                              46.2             MATCH                              0.257976                              0.3            MATCH  MATCH
+
+Suggested manuscript sentence
+-----------------------------
+The four major structural groups together account for 46.2% of the total SHAP attribution, while Dimensionality and Other structure contribute a further 0.3%, giving a complete structural total of 46.5%.
+四个主要结构组合计 46.2%，Dimensionality 和 Other structure 再贡献约 0.3%，因此完整结构总量为 46.5%。

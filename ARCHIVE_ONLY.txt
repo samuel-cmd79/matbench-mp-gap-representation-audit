@@ -1,0 +1,49 @@
+# Scripts intentionally not selected for the release snapshot
+# They remain untouched in the private repository.
+
+Check_features.py	Superseded, exploratory, or not required by the final paper
+analyze_l1_bandcenter_l2_error_tails.py	Superseded, exploratory, or not required by the final paper
+bandgap_error_analysis.py	Superseded, exploratory, or not required by the final paper
+bandgap_error_analysis_v2.py	Superseded, exploratory, or not required by the final paper
+bandgap_error_analysis_v3.py	Superseded, exploratory, or not required by the final paper
+bandgap_error_analysis_v4.py	Superseded, exploratory, or not required by the final paper
+bandgap_error_analysis_v5.py	Superseded, exploratory, or not required by the final paper
+bandgap_error_analysis_v6.py	Superseded, exploratory, or not required by the final paper
+bandgap_error_analysis_v7.py	Superseded, exploratory, or not required by the final paper
+boundary_confusion_stats.py	Superseded, exploratory, or not required by the final paper
+boundary_confusion_stats_v2.py	Superseded, exploratory, or not required by the final paper
+check_features_v2.py	Superseded, exploratory, or not required by the final paper
+check_zero_gap_delta_stability_v1_v2_gnn_npz.py	Superseded, exploratory, or not required by the final paper
+compare_l1_bandcenter_l2.py	Superseded, exploratory, or not required by the final paper
+gsbandgap_rank_from_shap.py	Superseded, exploratory, or not required by the final paper
+mp_gap_baseline_v1_run0709.py	Python export intentionally omitted; frozen notebook is canonical
+mp_gap_baseline_v2.py	Legacy Python export intentionally omitted; legacy notebook is retained
+mp_gap_baseline_v2_run0709.py	Python export intentionally omitted; frozen notebook is canonical
+mp_gap_structure_colab.py	Superseded, exploratory, or not required by the final paper
+mp_gap_structure_test.py	Superseded, exploratory, or not required by the final paper
+mp_gpa_baseline_v1.py	Legacy Python export intentionally omitted; legacy notebook is retained
+neg_and_family_analysis.py	Superseded, exploratory, or not required by the final paper
+neg_and_family_analysis_v2.py	Superseded, exploratory, or not required by the final paper
+neg_and_family_analysis_v3.py	Superseded, exploratory, or not required by the final paper
+octahedral_tm_confound_check.py	Superseded, exploratory, or not required by the final paper
+opus_5.py	Ad-hoc inspection script
+polymorph_analysis.py	Superseded, exploratory, or not required by the final paper
+polymorph_analysis_v2.py	Superseded, exploratory, or not required by the final paper
+polymorph_analysis_v3.py	Superseded, exploratory, or not required by the final paper
+polymorph_bound_fold_conditioned.py	Superseded, exploratory, or not required by the final paper
+polymorph_bound_fold_conditioned_v2.py	Superseded, exploratory, or not required by the final paper
+reload_raw_test.py	Exploratory raw reconstruction, superseded by provenance audit
+resubmit_v3_denorm.py	Old denormalization experiment; fold 4 used an estimated scale
+shap_crossfold_aggregate.py	Superseded, exploratory, or not required by the final paper
+shap_crossfold_aggregate_audited.py	Superseded, exploratory, or not required by the final paper
+shap_crossfold_aggregate_audited_v2.py	Superseded, exploratory, or not required by the final paper
+submit_v3_from_npz.py	Old V3 submitter; ignores its --npz_dir argument
+test_pbe.py	Early prototype, not the frozen benchmark pipeline
+train_ids_export.py	Superseded, exploratory, or not required by the final paper
+v1_consistency_check.py	Superseded, exploratory, or not required by the final paper
+v3_alignn_matbench_mp_gap.py	Superseded, exploratory, or not required by the final paper
+v3_alignn_matbench_mp_gap_fixed.py	Superseded, exploratory, or not required by the final paper
+v4_alignn_matbench_mp_gap.py	Superseded, exploratory, or not required by the final paper
+v4_alignn_matbench_mp_gap_fixed.py	Superseded, exploratory, or not required by the final paper
+v4_alignn_matbench_mp_gap_fixed_final.py	Superseded, exploratory, or not required by the final paper
+v4_rmse.py	Superseded, exploratory, or not required by the final paper

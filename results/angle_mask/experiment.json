@@ -1,0 +1,13 @@
+{
+  "experiment": "explicit_angle_zero",
+  "angle_mask": true,
+  "mask_target": "ALIGNNAtomWise.angle_embedding output",
+  "mask_operation": "embedded * 0.0",
+  "fold": 0,
+  "epochs": 100,
+  "random_seed": 123,
+  "alignn_layers": 4,
+  "gcn_layers": 4,
+  "compute_line_graph": true,
+  "note": "Explicit bond-angle values are masked; line-graph topology and three-body connectivity remain available."
+}

@@ -1,0 +1,2 @@
+aggregation method,scope,calculated structural total (%),reference L1 structural total (%),absolute difference,absolute tolerance,n columns,reference n columns,BandCenter included,status
+"normalize within each fold, then average the five folds equally",L1 composition-only audit,0.000000000000,0.000000000000,0.000000000000,0.000005000000,0,0,False,MATCH

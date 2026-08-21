@@ -1,0 +1,6 @@
+"fold (file, 1-idx)","fold (analysis, 0-idx)",total_rounds,best_iteration,best_val_MAE,final_val_MAE,early_stop_patience,early_stop_triggered,final_equals_best
+1,0,8000,7999,0.296666,0.296666,200,False,True
+2,1,8000,7999,0.294996,0.294996,200,False,True
+3,2,8000,7999,0.294712,0.294712,200,False,True
+4,3,8000,7997,0.299936,0.299938,200,False,False
+5,4,8000,7996,0.299214,0.299216,200,False,False

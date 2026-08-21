@@ -1,0 +1,7 @@
+population,metric,point_estimate,ci_95_lower,ci_95_upper,n_bootstrap,seed,cluster_unit,n_unique_formula_clusters,multiplicity_preserved
+global_repeated_formula_subset,fold_conditioned_bound_eV,0.08419456929310215,0.07596386517375421,0.09385513284438088,2000,20260730,reduced_formula,11788,True
+global_repeated_formula_subset,L2_MAE_minus_bound_eV,0.19232147420043685,0.17690695629007022,0.20516721794997428,2000,20260730,reduced_formula,11788,True
+global_repeated_formula_subset,L3_MAE_minus_bound_eV,0.08815125421972994,0.07413576821825599,0.10013902036612436,2000,20260730,reduced_formula,11788,True
+same_fold_repeated_subset,fold_conditioned_bound_eV,0.16481795162323268,0.15393975346901748,0.17551073918364077,2000,20260730,reduced_formula,4489,True
+same_fold_repeated_subset,L2_MAE_minus_bound_eV,0.10348967689284964,0.08415349560373123,0.12109713303182414,2000,20260730,reduced_formula,4489,True
+same_fold_repeated_subset,L3_MAE_minus_bound_eV,0.0088383923179029,-0.008262858575815074,0.025041742437498144,2000,20260730,reduced_formula,4489,True

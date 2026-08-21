@@ -1,0 +1,133 @@
+column position,feature,assigned group,assignment type,n specific group matches,matched specific groups,duplicate name count,is duplicate feature name,is BandCenter
+0,MagpieData minimum Number,Periodic position (comp),specific rule,1,Periodic position (comp),1,False,False
+1,MagpieData maximum Number,Periodic position (comp),specific rule,1,Periodic position (comp),1,False,False
+2,MagpieData range Number,Periodic position (comp),specific rule,1,Periodic position (comp),1,False,False
+3,MagpieData mean Number,Periodic position (comp),specific rule,1,Periodic position (comp),1,False,False
+4,MagpieData avg_dev Number,Periodic position (comp),specific rule,1,Periodic position (comp),1,False,False
+5,MagpieData mode Number,Periodic position (comp),specific rule,1,Periodic position (comp),1,False,False
+6,MagpieData minimum MendeleevNumber,Periodic position (comp),specific rule,1,Periodic position (comp),1,False,False
+7,MagpieData maximum MendeleevNumber,Periodic position (comp),specific rule,1,Periodic position (comp),1,False,False
+8,MagpieData range MendeleevNumber,Periodic position (comp),specific rule,1,Periodic position (comp),1,False,False
+9,MagpieData mean MendeleevNumber,Periodic position (comp),specific rule,1,Periodic position (comp),1,False,False
+10,MagpieData avg_dev MendeleevNumber,Periodic position (comp),specific rule,1,Periodic position (comp),1,False,False
+11,MagpieData mode MendeleevNumber,Periodic position (comp),specific rule,1,Periodic position (comp),1,False,False
+12,MagpieData minimum AtomicWeight,Atomic size (comp),specific rule,1,Atomic size (comp),1,False,False
+13,MagpieData maximum AtomicWeight,Atomic size (comp),specific rule,1,Atomic size (comp),1,False,False
+14,MagpieData range AtomicWeight,Atomic size (comp),specific rule,1,Atomic size (comp),1,False,False
+15,MagpieData mean AtomicWeight,Atomic size (comp),specific rule,1,Atomic size (comp),1,False,False
+16,MagpieData avg_dev AtomicWeight,Atomic size (comp),specific rule,1,Atomic size (comp),1,False,False
+17,MagpieData mode AtomicWeight,Atomic size (comp),specific rule,1,Atomic size (comp),1,False,False
+18,MagpieData minimum MeltingT,Bond strength (comp),specific rule,1,Bond strength (comp),1,False,False
+19,MagpieData maximum MeltingT,Bond strength (comp),specific rule,1,Bond strength (comp),1,False,False
+20,MagpieData range MeltingT,Bond strength (comp),specific rule,1,Bond strength (comp),1,False,False
+21,MagpieData mean MeltingT,Bond strength (comp),specific rule,1,Bond strength (comp),1,False,False
+22,MagpieData avg_dev MeltingT,Bond strength (comp),specific rule,1,Bond strength (comp),1,False,False
+23,MagpieData mode MeltingT,Bond strength (comp),specific rule,1,Bond strength (comp),1,False,False
+24,MagpieData minimum Column,Periodic position (comp),specific rule,1,Periodic position (comp),1,False,False
+25,MagpieData maximum Column,Periodic position (comp),specific rule,1,Periodic position (comp),1,False,False
+26,MagpieData range Column,Periodic position (comp),specific rule,1,Periodic position (comp),1,False,False
+27,MagpieData mean Column,Periodic position (comp),specific rule,1,Periodic position (comp),1,False,False
+28,MagpieData avg_dev Column,Periodic position (comp),specific rule,1,Periodic position (comp),1,False,False
+29,MagpieData mode Column,Periodic position (comp),specific rule,1,Periodic position (comp),1,False,False
+30,MagpieData minimum Row,Atomic size (comp),specific rule,1,Atomic size (comp),1,False,False
+31,MagpieData maximum Row,Atomic size (comp),specific rule,1,Atomic size (comp),1,False,False
+32,MagpieData range Row,Atomic size (comp),specific rule,1,Atomic size (comp),1,False,False
+33,MagpieData mean Row,Atomic size (comp),specific rule,1,Atomic size (comp),1,False,False
+34,MagpieData avg_dev Row,Atomic size (comp),specific rule,1,Atomic size (comp),1,False,False
+35,MagpieData mode Row,Atomic size (comp),specific rule,1,Atomic size (comp),1,False,False
+36,MagpieData minimum CovalentRadius,Atomic size (comp),specific rule,1,Atomic size (comp),1,False,False
+37,MagpieData maximum CovalentRadius,Atomic size (comp),specific rule,1,Atomic size (comp),1,False,False
+38,MagpieData range CovalentRadius,Atomic size (comp),specific rule,1,Atomic size (comp),1,False,False
+39,MagpieData mean CovalentRadius,Atomic size (comp),specific rule,1,Atomic size (comp),1,False,False
+40,MagpieData avg_dev CovalentRadius,Atomic size (comp),specific rule,1,Atomic size (comp),1,False,False
+41,MagpieData mode CovalentRadius,Atomic size (comp),specific rule,1,Atomic size (comp),1,False,False
+42,MagpieData minimum Electronegativity,Ionicity,specific rule,1,Ionicity,1,False,False
+43,MagpieData maximum Electronegativity,Ionicity,specific rule,1,Ionicity,1,False,False
+44,MagpieData range Electronegativity,Ionicity,specific rule,1,Ionicity,1,False,False
+45,MagpieData mean Electronegativity,Ionicity,specific rule,1,Ionicity,1,False,False
+46,MagpieData avg_dev Electronegativity,Ionicity,specific rule,1,Ionicity,1,False,False
+47,MagpieData mode Electronegativity,Ionicity,specific rule,1,Ionicity,1,False,False
+48,MagpieData minimum NsValence,d/p electron count (comp),specific rule,1,d/p electron count (comp),1,False,False
+49,MagpieData maximum NsValence,d/p electron count (comp),specific rule,1,d/p electron count (comp),1,False,False
+50,MagpieData range NsValence,d/p electron count (comp),specific rule,1,d/p electron count (comp),1,False,False
+51,MagpieData mean NsValence,d/p electron count (comp),specific rule,1,d/p electron count (comp),1,False,False
+52,MagpieData avg_dev NsValence,d/p electron count (comp),specific rule,1,d/p electron count (comp),1,False,False
+53,MagpieData mode NsValence,d/p electron count (comp),specific rule,1,d/p electron count (comp),1,False,False
+54,MagpieData minimum NpValence,d/p electron count (comp),specific rule,1,d/p electron count (comp),1,False,False
+55,MagpieData maximum NpValence,d/p electron count (comp),specific rule,1,d/p electron count (comp),1,False,False
+56,MagpieData range NpValence,d/p electron count (comp),specific rule,1,d/p electron count (comp),1,False,False
+57,MagpieData mean NpValence,d/p electron count (comp),specific rule,1,d/p electron count (comp),1,False,False
+58,MagpieData avg_dev NpValence,d/p electron count (comp),specific rule,1,d/p electron count (comp),1,False,False
+59,MagpieData mode NpValence,d/p electron count (comp),specific rule,1,d/p electron count (comp),1,False,False
+60,MagpieData minimum NdValence,d/p electron count (comp),specific rule,1,d/p electron count (comp),1,False,False
+61,MagpieData maximum NdValence,d/p electron count (comp),specific rule,1,d/p electron count (comp),1,False,False
+62,MagpieData range NdValence,d/p electron count (comp),specific rule,1,d/p electron count (comp),1,False,False
+63,MagpieData mean NdValence,d/p electron count (comp),specific rule,1,d/p electron count (comp),1,False,False
+64,MagpieData avg_dev NdValence,d/p electron count (comp),specific rule,1,d/p electron count (comp),1,False,False
+65,MagpieData mode NdValence,d/p electron count (comp),specific rule,1,d/p electron count (comp),1,False,False
+66,MagpieData minimum NfValence,d/p electron count (comp),specific rule,1,d/p electron count (comp),1,False,False
+67,MagpieData maximum NfValence,d/p electron count (comp),specific rule,1,d/p electron count (comp),1,False,False
+68,MagpieData range NfValence,d/p electron count (comp),specific rule,1,d/p electron count (comp),1,False,False
+69,MagpieData mean NfValence,d/p electron count (comp),specific rule,1,d/p electron count (comp),1,False,False
+70,MagpieData avg_dev NfValence,d/p electron count (comp),specific rule,1,d/p electron count (comp),1,False,False
+71,MagpieData mode NfValence,d/p electron count (comp),specific rule,1,d/p electron count (comp),1,False,False
+72,MagpieData minimum NValence,Valence total (comp),specific rule,1,Valence total (comp),1,False,False
+73,MagpieData maximum NValence,Valence total (comp),specific rule,1,Valence total (comp),1,False,False
+74,MagpieData range NValence,Valence total (comp),specific rule,1,Valence total (comp),1,False,False
+75,MagpieData mean NValence,Valence total (comp),specific rule,1,Valence total (comp),1,False,False
+76,MagpieData avg_dev NValence,Valence total (comp),specific rule,1,Valence total (comp),1,False,False
+77,MagpieData mode NValence,Valence total (comp),specific rule,1,Valence total (comp),1,False,False
+78,MagpieData minimum NsUnfilled,Unfilled orbitals (comp),specific rule,1,Unfilled orbitals (comp),1,False,False
+79,MagpieData maximum NsUnfilled,Unfilled orbitals (comp),specific rule,1,Unfilled orbitals (comp),1,False,False
+80,MagpieData range NsUnfilled,Unfilled orbitals (comp),specific rule,1,Unfilled orbitals (comp),1,False,False
+81,MagpieData mean NsUnfilled,Unfilled orbitals (comp),specific rule,1,Unfilled orbitals (comp),1,False,False
+82,MagpieData avg_dev NsUnfilled,Unfilled orbitals (comp),specific rule,1,Unfilled orbitals (comp),1,False,False
+83,MagpieData mode NsUnfilled,Unfilled orbitals (comp),specific rule,1,Unfilled orbitals (comp),1,False,False
+84,MagpieData minimum NpUnfilled,Unfilled orbitals (comp),specific rule,1,Unfilled orbitals (comp),1,False,False
+85,MagpieData maximum NpUnfilled,Unfilled orbitals (comp),specific rule,1,Unfilled orbitals (comp),1,False,False
+86,MagpieData range NpUnfilled,Unfilled orbitals (comp),specific rule,1,Unfilled orbitals (comp),1,False,False
+87,MagpieData mean NpUnfilled,Unfilled orbitals (comp),specific rule,1,Unfilled orbitals (comp),1,False,False
+88,MagpieData avg_dev NpUnfilled,Unfilled orbitals (comp),specific rule,1,Unfilled orbitals (comp),1,False,False
+89,MagpieData mode NpUnfilled,Unfilled orbitals (comp),specific rule,1,Unfilled orbitals (comp),1,False,False
+90,MagpieData minimum NdUnfilled,Unfilled orbitals (comp),specific rule,1,Unfilled orbitals (comp),1,False,False
+91,MagpieData maximum NdUnfilled,Unfilled orbitals (comp),specific rule,1,Unfilled orbitals (comp),1,False,False
+92,MagpieData range NdUnfilled,Unfilled orbitals (comp),specific rule,1,Unfilled orbitals (comp),1,False,False
+93,MagpieData mean NdUnfilled,Unfilled orbitals (comp),specific rule,1,Unfilled orbitals (comp),1,False,False
+94,MagpieData avg_dev NdUnfilled,Unfilled orbitals (comp),specific rule,1,Unfilled orbitals (comp),1,False,False
+95,MagpieData mode NdUnfilled,Unfilled orbitals (comp),specific rule,1,Unfilled orbitals (comp),1,False,False
+96,MagpieData minimum NfUnfilled,Unfilled orbitals (comp),specific rule,1,Unfilled orbitals (comp),1,False,False
+97,MagpieData maximum NfUnfilled,Unfilled orbitals (comp),specific rule,1,Unfilled orbitals (comp),1,False,False
+98,MagpieData range NfUnfilled,Unfilled orbitals (comp),specific rule,1,Unfilled orbitals (comp),1,False,False
+99,MagpieData mean NfUnfilled,Unfilled orbitals (comp),specific rule,1,Unfilled orbitals (comp),1,False,False
+100,MagpieData avg_dev NfUnfilled,Unfilled orbitals (comp),specific rule,1,Unfilled orbitals (comp),1,False,False
+101,MagpieData mode NfUnfilled,Unfilled orbitals (comp),specific rule,1,Unfilled orbitals (comp),1,False,False
+102,MagpieData minimum NUnfilled,Unfilled orbitals (comp),specific rule,1,Unfilled orbitals (comp),1,False,False
+103,MagpieData maximum NUnfilled,Unfilled orbitals (comp),specific rule,1,Unfilled orbitals (comp),1,False,False
+104,MagpieData range NUnfilled,Unfilled orbitals (comp),specific rule,1,Unfilled orbitals (comp),1,False,False
+105,MagpieData mean NUnfilled,Unfilled orbitals (comp),specific rule,1,Unfilled orbitals (comp),1,False,False
+106,MagpieData avg_dev NUnfilled,Unfilled orbitals (comp),specific rule,1,Unfilled orbitals (comp),1,False,False
+107,MagpieData mode NUnfilled,Unfilled orbitals (comp),specific rule,1,Unfilled orbitals (comp),1,False,False
+108,MagpieData minimum GSvolume_pa,Atomic size (comp),specific rule,1,Atomic size (comp),1,False,False
+109,MagpieData maximum GSvolume_pa,Atomic size (comp),specific rule,1,Atomic size (comp),1,False,False
+110,MagpieData range GSvolume_pa,Atomic size (comp),specific rule,1,Atomic size (comp),1,False,False
+111,MagpieData mean GSvolume_pa,Atomic size (comp),specific rule,1,Atomic size (comp),1,False,False
+112,MagpieData avg_dev GSvolume_pa,Atomic size (comp),specific rule,1,Atomic size (comp),1,False,False
+113,MagpieData mode GSvolume_pa,Atomic size (comp),specific rule,1,Atomic size (comp),1,False,False
+114,MagpieData minimum GSbandgap,Band-gap prior (comp),specific rule,1,Band-gap prior (comp),1,False,False
+115,MagpieData maximum GSbandgap,Band-gap prior (comp),specific rule,1,Band-gap prior (comp),1,False,False
+116,MagpieData range GSbandgap,Band-gap prior (comp),specific rule,1,Band-gap prior (comp),1,False,False
+117,MagpieData mean GSbandgap,Band-gap prior (comp),specific rule,1,Band-gap prior (comp),1,False,False
+118,MagpieData avg_dev GSbandgap,Band-gap prior (comp),specific rule,1,Band-gap prior (comp),1,False,False
+119,MagpieData mode GSbandgap,Band-gap prior (comp),specific rule,1,Band-gap prior (comp),1,False,False
+120,MagpieData minimum GSmagmom,Magnetic moment (comp),specific rule,1,Magnetic moment (comp),1,False,False
+121,MagpieData maximum GSmagmom,Magnetic moment (comp),specific rule,1,Magnetic moment (comp),1,False,False
+122,MagpieData range GSmagmom,Magnetic moment (comp),specific rule,1,Magnetic moment (comp),1,False,False
+123,MagpieData mean GSmagmom,Magnetic moment (comp),specific rule,1,Magnetic moment (comp),1,False,False
+124,MagpieData avg_dev GSmagmom,Magnetic moment (comp),specific rule,1,Magnetic moment (comp),1,False,False
+125,MagpieData mode GSmagmom,Magnetic moment (comp),specific rule,1,Magnetic moment (comp),1,False,False
+126,MagpieData minimum SpaceGroupNumber,Periodic position (comp),specific rule,1,Periodic position (comp),1,False,False
+127,MagpieData maximum SpaceGroupNumber,Periodic position (comp),specific rule,1,Periodic position (comp),1,False,False
+128,MagpieData range SpaceGroupNumber,Periodic position (comp),specific rule,1,Periodic position (comp),1,False,False
+129,MagpieData mean SpaceGroupNumber,Periodic position (comp),specific rule,1,Periodic position (comp),1,False,False
+130,MagpieData avg_dev SpaceGroupNumber,Periodic position (comp),specific rule,1,Periodic position (comp),1,False,False
+131,MagpieData mode SpaceGroupNumber,Periodic position (comp),specific rule,1,Periodic position (comp),1,False,False

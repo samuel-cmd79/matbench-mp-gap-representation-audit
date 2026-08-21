@@ -1,0 +1,86 @@
+{
+  "comparison_name": "Level 1 / Level 1 + BandCenter / Level 2 / Level 3",
+  "task_name": "matbench_mp_gap",
+  "created_utc": "2026-07-31T08:48:14.512308+00:00",
+  "requested_paths": {
+    "level1": "../outputs_v1_run0709",
+    "level1_plus_bandcenter": "../matbench_outputs_l1_plus_bandcenter_run0731",
+    "level2": "../matbench_outputs_v2_run_0709",
+    "level3": "../results_v4",
+    "output": "../matbench_outputs_l1_bandcenter_l2_l3_comparison_run0731_ddof0"
+  },
+  "resolved_paths": {
+    "level1": "${HOME}/material_projects_structure/outputs_v1_run0709",
+    "level1_plus_bandcenter": "${HOME}/material_projects_structure/matbench_outputs_l1_plus_bandcenter_run0731",
+    "level2": "${HOME}/material_projects_structure/matbench_outputs_v2_run0709",
+    "level3": "${HOME}/material_projects_structure/results_v4",
+    "output": "${HOME}/material_projects_structure/matbench_outputs_l1_bandcenter_l2_l3_comparison_run0731_ddof0"
+  },
+  "models": [
+    {
+      "key": "l1",
+      "label": "Level 1",
+      "features": 132,
+      "prediction_column": "prediction_level1"
+    },
+    {
+      "key": "l1bc",
+      "label": "Level 1 + BandCenter",
+      "features": 133,
+      "prediction_column": "prediction_level1_plus_bandcenter"
+    },
+    {
+      "key": "l2",
+      "label": "Level 2",
+      "features": 283,
+      "prediction_column": "prediction_level2"
+    },
+    {
+      "key": "l3",
+      "label": "Level 3",
+      "features": "N/A",
+      "prediction_column": "prediction_level3"
+    }
+  ],
+  "prediction_policy": {
+    "level1": "frozen clipped .npy bound to ordered official test IDs",
+    "level1_plus_bandcenter": "clipped CSV aligned by explicit sample ID and fold",
+    "level2": "frozen clipped .npy bound to ordered official test IDs",
+    "level3": "frozen fold NPZ (ids,preds), strictly aligned by explicit sample ID"
+  },
+  "metric_policy": {
+    "all_metrics_use": "non-negativity-clipped predictions",
+    "aggregate": "mean of five official fold metrics",
+    "fold_sd_ddof": 0,
+    "zero_gap_definition": "true_label == 0.0 exactly"
+  },
+  "sequential_gain_definition": {
+    "delta_bc": "MAE(Level 1) - MAE(Level 1 + BandCenter)",
+    "delta_remaining": "MAE(Level 1 + BandCenter) - MAE(Level 2)",
+    "delta_l2_to_l3": "MAE(Level 2) - MAE(Level 3)",
+    "fraction": "(MAE(Level 1) - MAE(Level 1 + BandCenter)) / (MAE(Level 1) - MAE(Level 2))",
+    "interpretation": "sequential gain under this feature-addition order; not strict causal contribution",
+    "majority_descriptive_threshold": 0.5
+  },
+  "official_folds": [
+    0,
+    1,
+    2,
+    3,
+    4
+  ],
+  "fold_assignment_sha256": "34ee55098e821ad0c3fba1392a79fc839efc8f7690c121be15a80fd92881e2b5",
+  "source_manifest_sha256": "4157c4d2e3d40952b3599445e7dfae27af1bbf9b11d6b79cf06e666476d6a2d6",
+  "versions": {
+    "python": "3.9.23 | packaged by conda-forge | (main, Jun  4 2025, 18:02:02)  [Clang 18.1.8 ]",
+    "python_executable": "${HOME}/miniforge3/envs/matbench3.9/bin/python",
+    "platform": "macOS-26.5.2-arm64-arm-64bit",
+    "numpy": "2.0.2",
+    "pandas": "2.3.1",
+    "matbench": "0.6",
+    "matminer": "0.9.3",
+    "pymatgen": "2024.8.9",
+    "scikit-learn": "1.6.1",
+    "xgboost": "2.1.4"
+  }
+}

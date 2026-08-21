@@ -1,0 +1,9 @@
+model,features,true_label_class,pred_lt_0_1_count,pred_ge_0_1_count,row_total,warning
+Level 1,132,true zero (y == 0),33720,12431,46151,true zero & pred >= 0.1 is not zero_gap_miss; zero_gap_miss requires pred > 0.5
+Level 1,132,true nonzero (y > 0),2388,57574,59962,true zero & pred >= 0.1 is not zero_gap_miss; zero_gap_miss requires pred > 0.5
+Level 1 + BandCenter,133,true zero (y == 0),33670,12481,46151,true zero & pred >= 0.1 is not zero_gap_miss; zero_gap_miss requires pred > 0.5
+Level 1 + BandCenter,133,true nonzero (y > 0),2396,57566,59962,true zero & pred >= 0.1 is not zero_gap_miss; zero_gap_miss requires pred > 0.5
+Level 2,283,true zero (y == 0),35370,10781,46151,true zero & pred >= 0.1 is not zero_gap_miss; zero_gap_miss requires pred > 0.5
+Level 2,283,true nonzero (y > 0),2582,57380,59962,true zero & pred >= 0.1 is not zero_gap_miss; zero_gap_miss requires pred > 0.5
+Level 3,N/A,true zero (y == 0),42435,3716,46151,true zero & pred >= 0.1 is not zero_gap_miss; zero_gap_miss requires pred > 0.5
+Level 3,N/A,true nonzero (y > 0),5028,54934,59962,true zero & pred >= 0.1 is not zero_gap_miss; zero_gap_miss requires pred > 0.5

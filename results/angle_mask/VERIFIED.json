@@ -1,0 +1,14 @@
+{
+  "internal_test_mae": 0.18716438689915174,
+  "internal_test_r": 0.9557345961601821,
+  "experiment": "explicit_angle_zero",
+  "angle_mask": true,
+  "smoke_test": {
+    "passed": true,
+    "masked_angle_max_abs": 0.0,
+    "prediction_max_abs_diff": 0.0005114078521728516,
+    "probe_batch_size": 1
+  },
+  "fold": 0,
+  "elapsed_min": 464.0
+}
