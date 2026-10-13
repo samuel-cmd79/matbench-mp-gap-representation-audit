@@ -1,24 +1,20 @@
-# How Much Structure Does Band-Gap Prediction Need?
+# What Structure Adds to Band-Gap Prediction, and What SHAP Does Not Tell Us
 
-## A Fold-Controlled Representation–Learner Audit from Composition to Graphs on MatBench `mp_gap`
+Reproducibility companion to the preprint of the same title (version 2, October 2026; link to be added). An earlier version of the preprint was titled *How Much Structure Does Band-Gap Prediction Need? A Fold-Controlled Representation–Learner Audit from Composition to Graphs on MatBench mp_gap*. A version of this work was accepted to the Findings, Tools and Open Challenges track of the AI4Mat-NeurIPS 2026 workshop.
 
-This repository is the reproducibility companion to the preprint **“How Much Structure Does Band-Gap Prediction Need? A Fold-Controlled Representation–Learner Audit from Composition to Graphs on MatBench mp_gap.”** It audits three representation–learner pipelines on the 106,113-entry MatBench `mp_gap` task:
+The study compares three models with increasing access to crystal structure on the 106,113-entry MatBench `mp_gap` task, all scored on the official MatBench test folds:
 
 1. **Level 1 — composition:** 132 Magpie `ElementProperty` features with XGBoost;
-2. **Level 2 — composition plus engineered descriptors:** 283 composition and structure columns with XGBoost;
-3. **Level 3 — atomistic graph:** ALIGNN with line-graph geometry.
+2. **Level 2 — composition plus engineered structural descriptors:** 283 columns with XGBoost;
+3. **Level 3 — atomistic graph:** ALIGNN, whose line graph encodes bond angles explicitly.
 
-“Fold-controlled” means that the levels use the same targets, official MatBench test folds, scoring metrics, and non-negativity post-processing. It does **not** mean that learner, direct model-fitting fraction, optimizer, or training budget are matched. In particular, the Level-2-to-Level-3 arm is a representation–learner–training contrast, not a representation-only experiment.
+> **Version note.** This release (v1.0.0) contains the code and outputs behind the first preprint version. Preprint version 2 adds robustness analyses (two further random seeds, XGBoost trained to convergence, and formula-grouped cross-validation) and regenerates the Level-2 raw predictions by deterministic replay; these outputs will be added in the next release. Where this README and preprint version 2 differ, the preprint takes precedence.
 
-Approximate direct model-fitting fractions are 64% for XGBoost, 72% for ALIGNN, and 80% for random forest. For Level 2, 64% refers to tree-parameter fitting; preprocessing statistics use the complete official outer-training fold, with official-test entries excluded.
+![Gap-stratified MAE across the representation ladder](figure/bin_mae_level_comparison.png)
 
-Unless explicitly marked **diagnostic**, paper-facing benchmark results use the frozen, non-negative, out-of-fold predictions on the official MatBench splits.
+## Main findings (preprint version 2)
 
-![Gap-stratified MAE across the primary representation ladder](figure/bin_mae_level_comparison.png)
-
-## Headline results
-
-Fold dispersions below are population standard deviations across the five fixed official folds (`ddof=0`), recomputed from the frozen predictions.
+Fold means ± population standard deviation across the five official folds (XGBoost limited to 8,000 rounds, seed 42).
 
 | Model | Representation | MAE (eV) | RMSE (eV) | R² |
 |---|---|---:|---:|---:|
@@ -28,16 +24,10 @@ Fold dispersions below are population standard deviations across the five fixed 
 | Level 2, XGB | Composition + descriptors | 0.2855 ± 0.0030 | 0.4987 ± 0.0075 | 0.9027 ± 0.0021 |
 | Level 3, ALIGNN | Atomistic graph | 0.1797 ± 0.0029 | 0.4698 ± 0.0077 | 0.9136 ± 0.0026 |
 
-The main findings are:
+- **Where structure helps.** Predictions for zero-gap materials collapse onto zero, and for compositions that occur in several structures with very different gaps, ALIGNN falls below the error floor of any composition-only model.
+- **Where it does not.** Near the gap boundary, ALIGNN trades errors rather than removing them, placing more gapped materials near zero; in the extreme error tail it is no better than composition alone.
+- **What SHAP does not tell us.** Coordination fingerprints receive the largest SHAP share in the descriptor model (26%) but can be deleted without loss, whereas deleting global symmetry (12% of the share) raises MAE by 10%. Both results hold across three seeds and when XGBoost is trained to convergence.
 
-- Along the primary XGBoost-to-ALIGNN ladder, MAE decreases from **0.3380 → 0.2855 → 0.1797 eV**.
-- Under the fixed single-seed Level-2 protocol capped at 8,000 rounds, deleting coordination fingerprints does not worsen MAE (**ΔMAE = −0.0053 eV**), whereas deleting global symmetry raises MAE by **0.0287 eV**. Gross SHAP attribution share and retrain-after-removal response are different fitted-pipeline quantities; neither is treated as a causal contribution.
-- On the aggregate fold-conditioned repeated-composition domain, Level 3 remains **+0.0088 eV** above the empirical oracle and the 95% pointwise formula-cluster interval spans zero (**[−0.0083, +0.0250] eV**). Only in the post hoc **>1 eV global within-formula-spread stratum** does the entire unadjusted pointwise interval lie below zero (**−0.0824 eV [−0.1106, −0.0505]**).
-- On exact-zero PBE targets, the formally comparable Level-1-to-Level-3 raw-prediction IQR contracts **35.6-fold** (0.1356 → 0.0038 eV), and **93.3%** of entries move closer to zero. Level-2 raw predictions are diagnostic only.
-- Non-negativity clipping creates an exact-zero-error atom that grows from **15.0% to 18.5%** of all entries. On the atom-free positive-gap subset, median absolute error falls **2.47-fold** (0.3203 → 0.1297 eV), but the advantage reverses between P95 and P99. Across the full dataset, the worst 1% of Level-3 errors account for **56.0%** of its SSE.
-- In a configuration-matched fold-0 control, suppressing numerical angle values while retaining line-graph topology raises clipped MAE by **0.01453 eV (8.2%)**, computed from the unrounded official-test MAEs. This is a single-fold ablation, not a decomposition of the complete Level-2-to-Level-3 difference.
-
-![Model error relative to the fold-conditioned repeated-composition oracle](figure/polymorph_bound_delta_ci_by_spread.png)
 
 ## Before running scripts: preserve the frozen release
 
@@ -307,9 +297,10 @@ The script index should identify the two `run0709.ipynb` notebooks as canonical 
 
 ## Citation
 
-If you use this repository, please cite the accompanying manuscript:
+If you use this repository, please cite the accompanying preprint:
 
-> *How Much Structure Does Band-Gap Prediction Need? A Fold-Controlled Representation–Learner Audit from Composition to Graphs on MatBench mp_gap.* Preprint record forthcoming.
+> *What Structure Adds to Band-Gap Prediction, and What SHAP Does Not Tell Us.* Preprint, version 2 (2026); link to be added.
+
 
 ## License
 
