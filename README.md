@@ -1,6 +1,6 @@
 # What Structure Adds to Band-Gap Prediction, and What SHAP Does Not Tell Us
 
-Reproducibility companion to the preprint of the same title (version 2, October 2026; link to be added). An earlier version of the preprint was titled *How Much Structure Does Band-Gap Prediction Need? A Fold-Controlled Representation–Learner Audit from Composition to Graphs on MatBench mp_gap*. A version of this work was accepted to the Findings, Tools and Open Challenges track of the AI4Mat-NeurIPS 2026 workshop.
+Reproducibility companion to version 2 of the preprint (October 2026; public COE update pending). The DOI currently resolves to the earlier public version; the version-2 manuscript supersedes it. An earlier version of the preprint was titled *How Much Structure Does Band-Gap Prediction Need? A Fold-Controlled Representation–Learner Audit from Composition to Graphs on MatBench mp_gap*. A version of this work was accepted to the Findings, Tools and Open Challenges track of the AI4Mat-NeurIPS 2026 workshop.
 
 The study compares three models with increasing access to crystal structure on the 106,113-entry MatBench `mp_gap` task, all scored on the official MatBench test folds:
 
@@ -26,7 +26,7 @@ Fold means ± population standard deviation across the five official folds (XGBo
 
 - **Where structure helps.** Predictions for zero-gap materials collapse onto zero, and for compositions that occur in several structures with very different gaps, ALIGNN falls below the error floor of any composition-only model.
 - **Where it does not.** Near the gap boundary, ALIGNN trades errors rather than removing them, placing more gapped materials near zero; in the extreme error tail it is no better than composition alone.
-- **What SHAP does not tell us.** Coordination fingerprints receive the largest SHAP share in the descriptor model (26%) but can be deleted without loss, whereas deleting global symmetry (12% of the share) raises MAE by 10%. Both results hold across three seeds and when XGBoost is trained to convergence.
+- **What SHAP does not tell us.** Coordination fingerprints receive the largest SHAP share in the descriptor model (26.2%) but can be deleted without loss, whereas deleting global symmetry, with an 11.8% SHAP share, raises MAE by about 10%. Both results hold across three seeds and when XGBoost is trained to convergence.
 
 
 ## Before running scripts: preserve the frozen release
@@ -148,7 +148,7 @@ The canonical frozen tree-model training records are:
 
 Python exports and deterministic replay scripts are supporting records, not alternative canonical training pipelines. The notebooks in `archive/legacy_diagnostic/` are retained only to explain historical raw-prediction provenance.
 
-The recorded Level-2 notebook run also wrote four core GNN-export files per fold—`train_inputs.pkl`, `train_outputs.pkl`, `test_inputs.pkl`, and `test_ids.pkl`—for 20 files in total. The supplementary `scripts/train_ids_export.py` reads each official outer-training index from MatBench and adds one `train_ids.pkl` per fold, giving the released 25-file `gnn_export/` bundle. Neither step writes test-label files. The supplementary script uses the release's Python 3.9 / MatBench 0.6 contract and verifies the expected v1.0.0 size and SHA-256 of every training-ID file before any write.
+The recorded Level-2 notebook run also wrote four core GNN-export files per fold—`train_inputs.pkl`, `train_outputs.pkl`, `test_inputs.pkl`, and `test_ids.pkl`—for 20 files in total. The supplementary `scripts/train_ids_export.py` reads each official outer-training index from MatBench and adds one `train_ids.pkl` per fold, giving the released 25-file `gnn_export/` bundle. Neither step writes test-label files. The supplementary script is intended for the recorded Python 3.9 / MatBench 0.6 environment and writes one `train_ids.pkl` file into each existing fold directory; it does not validate reference sizes or checksums before writing.
 
 `scripts/release/prepare_zenodo_data_release.py` only validates the two frozen directories, computes manifests and checksums, and packages them deterministically. It does not rerun data extraction, featurization, or model training.
 
@@ -286,8 +286,8 @@ The script index should identify the two `run0709.ipynb` notebooks as canonical 
 - Official random folds may place identical formulas or near-duplicate structures on both sides of the train/test split.
 - The Level-2-to-Level-3 contrast changes representation, learner, optimizer, direct fitting fraction, and training budget.
 - Frozen Level-2 preprocessing shares outer-training covariates with the later internal validation subset; official-test entries remain excluded from all training-stage operations.
-- Primary models use one random seed; fold dispersion is not seed variance.
-- Deletion retraining covers two feature groups under a fixed 8,000-round cap; the small negative coordination response is not interpreted as convergence-stable.
+- In preprint v2, XGBoost Level-1, Level-2 and deletion runs were repeated with three seeds (42, 101, 202); ALIGNN uses a single seed, and converged and formula-grouped runs use seed 42. Fold dispersion is not seed variance.
+- Deletion retraining covers two feature groups with one learner and one set of hyperparameters. In preprint v2, both deletion effects, including the small negative coordination response, hold across three seeds and when XGBoost is trained to convergence (SI S14); outputs of these runs will be added in the next release.
 - SHAP audits training-fold samples and gross coordinatewise magnitudes; it does not measure signed within-group cancellation or out-of-fold explanation stability.
 - Engineered-featurizer failures are non-random.
 - Oracle spread strata are post hoc, intervals are not multiplicity-adjusted, and bootstrap uncertainty excludes refitting, random seeds, and model selection.
@@ -299,7 +299,7 @@ The script index should identify the two `run0709.ipynb` notebooks as canonical 
 
 If you use this repository, please cite the accompanying preprint:
 
-> *What Structure Adds to Band-Gap Prediction, and What SHAP Does Not Tell Us.* Preprint, version 2 (2026); link to be added.
+> *What Structure Adds to Band-Gap Prediction, and What SHAP Does Not Tell Us.* Preprint, version 2 (2026); https://doi.org/10.33774/coe-2026-cnz3j.
 
 
 ## License
