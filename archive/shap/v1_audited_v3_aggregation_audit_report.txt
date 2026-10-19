@@ -1,0 +1,36 @@
+Corrected L1 composition SHAP aggregation audit
+===============================================
+L1 SHAP directory: ../outputs_v1_run0709
+Model: xgb
+Folds: [0, 1, 2, 3, 4]
+Samples by fold: [3000, 3000, 3000, 3000, 3000]
+Feature columns: 132
+Aggregation method: normalize within each fold, then average the five folds equally
+
+Grouping audit
+--------------
+Duplicate feature-name rows: 0
+Overlapping specific-rule rows: 0
+Generic fallback counts: {}
+BandCenter columns: 0 (expected 0)
+Ionicity columns: 6 (expected 6)
+Ionicity features: MagpieData minimum Electronegativity | MagpieData maximum Electronegativity | MagpieData range Electronegativity | MagpieData mean Electronegativity | MagpieData avg_dev Electronegativity | MagpieData mode Electronegativity
+
+Interpretation guardrails
+-------------------------
+Group shares are normalized within each fold and then averaged with equal fold weight.
+Mean share/column is an attribution-density descriptor, not a causal effect.
+Deletion ablation is an L2-only analysis; all L1 Deletion ΔMAE values are NA.
+
+L1 reference checks
+-------------------
+                Feature group                    metric  reference  calculated  absolute difference  absolute tolerance   status                     scope
+All mutually exclusive groups Group SHAP shares sum (%)      100.0   99.999992             0.000008            0.000005 NO MATCH L1 composition-only audit
+         BandCenter (L2 only)                 n columns        0.0    0.000000             0.000000            0.000000    MATCH L1 composition-only audit
+                     Ionicity                 n columns        6.0    6.000000             0.000000            0.000000    MATCH L1 composition-only audit
+
+L1 structural-total check
+-------------------------
+                                             aggregation method                     scope  calculated structural total (%)  reference L1 structural total (%)  absolute difference  absolute tolerance  n columns  reference n columns  BandCenter included status
+normalize within each fold, then average the five folds equally L1 composition-only audit                              0.0                                0.0                  0.0            0.000005          0                    0                False  MATCH
+Calculated structural columns: 0

@@ -1,0 +1,284 @@
+column position,feature,assigned group,assignment type,n specific group matches,matched specific groups,duplicate name count,is duplicate feature name,is BandCenter
+0,density,Bond length / packing,specific rule,1,Bond length / packing,1,False,False
+1,vpa,Bond length / packing,specific rule,1,Bond length / packing,1,False,False
+2,packing fraction,Bond length / packing,specific rule,1,Bond length / packing,1,False,False
+3,spacegroup_num,Global symmetry,specific rule,1,Global symmetry,1,False,False
+4,crystal_system_int,Global symmetry,specific rule,1,Global symmetry,1,False,False
+5,is_centrosymmetric,Global symmetry,specific rule,1,Global symmetry,1,False,False
+6,n_symmetry_ops,Global symmetry,specific rule,1,Global symmetry,1,False,False
+7,mean absolute deviation in relative bond length,Bond length / packing,specific rule,1,Bond length / packing,1,False,False
+8,max relative bond length,Bond length / packing,specific rule,1,Bond length / packing,1,False,False
+9,min relative bond length,Bond length / packing,specific rule,1,Bond length / packing,1,False,False
+10,minimum neighbor distance variation,Bond length / packing,specific rule,1,Bond length / packing,1,False,False
+11,maximum neighbor distance variation,Bond length / packing,specific rule,1,Bond length / packing,1,False,False
+12,range neighbor distance variation,Bond length / packing,specific rule,1,Bond length / packing,1,False,False
+13,mean neighbor distance variation,Bond length / packing,specific rule,1,Bond length / packing,1,False,False
+14,avg_dev neighbor distance variation,Bond length / packing,specific rule,1,Bond length / packing,1,False,False
+15,mean absolute deviation in relative cell size,Other structure,structure fallback,0,NA,1,False,False
+16,mean ordering parameter shell 1,Chemical ordering,specific rule,1,Chemical ordering,1,False,False
+17,mean ordering parameter shell 2,Chemical ordering,specific rule,1,Chemical ordering,1,False,False
+18,mean ordering parameter shell 3,Chemical ordering,specific rule,1,Chemical ordering,1,False,False
+19,dimensionality,Dimensionality,specific rule,1,Dimensionality,1,False,False
+20,mean wt CN_1,Coordination fingerprint,specific rule,1,Coordination fingerprint,1,False,False
+21,std_dev wt CN_1,Coordination fingerprint,specific rule,1,Coordination fingerprint,1,False,False
+22,mean sgl_bd CN_1,Coordination fingerprint,specific rule,1,Coordination fingerprint,1,False,False
+23,std_dev sgl_bd CN_1,Coordination fingerprint,specific rule,1,Coordination fingerprint,1,False,False
+24,mean wt CN_2,Coordination fingerprint,specific rule,1,Coordination fingerprint,1,False,False
+25,std_dev wt CN_2,Coordination fingerprint,specific rule,1,Coordination fingerprint,1,False,False
+26,mean L-shaped CN_2,Coordination fingerprint,specific rule,1,Coordination fingerprint,1,False,False
+27,std_dev L-shaped CN_2,Coordination fingerprint,specific rule,1,Coordination fingerprint,1,False,False
+28,mean water-like CN_2,Coordination fingerprint,specific rule,1,Coordination fingerprint,1,False,False
+29,std_dev water-like CN_2,Coordination fingerprint,specific rule,1,Coordination fingerprint,1,False,False
+30,mean bent 120 degrees CN_2,Coordination fingerprint,specific rule,1,Coordination fingerprint,1,False,False
+31,std_dev bent 120 degrees CN_2,Coordination fingerprint,specific rule,1,Coordination fingerprint,1,False,False
+32,mean bent 150 degrees CN_2,Coordination fingerprint,specific rule,1,Coordination fingerprint,1,False,False
+33,std_dev bent 150 degrees CN_2,Coordination fingerprint,specific rule,1,Coordination fingerprint,1,False,False
+34,mean linear CN_2,Coordination fingerprint,specific rule,1,Coordination fingerprint,1,False,False
+35,std_dev linear CN_2,Coordination fingerprint,specific rule,1,Coordination fingerprint,1,False,False
+36,mean wt CN_3,Coordination fingerprint,specific rule,1,Coordination fingerprint,1,False,False
+37,std_dev wt CN_3,Coordination fingerprint,specific rule,1,Coordination fingerprint,1,False,False
+38,mean trigonal planar CN_3,Coordination fingerprint,specific rule,1,Coordination fingerprint,1,False,False
+39,std_dev trigonal planar CN_3,Coordination fingerprint,specific rule,1,Coordination fingerprint,1,False,False
+40,mean trigonal non-coplanar CN_3,Coordination fingerprint,specific rule,1,Coordination fingerprint,1,False,False
+41,std_dev trigonal non-coplanar CN_3,Coordination fingerprint,specific rule,1,Coordination fingerprint,1,False,False
+42,mean T-shaped CN_3,Coordination fingerprint,specific rule,1,Coordination fingerprint,1,False,False
+43,std_dev T-shaped CN_3,Coordination fingerprint,specific rule,1,Coordination fingerprint,1,False,False
+44,mean wt CN_4,Coordination fingerprint,specific rule,1,Coordination fingerprint,1,False,False
+45,std_dev wt CN_4,Coordination fingerprint,specific rule,1,Coordination fingerprint,1,False,False
+46,mean square co-planar CN_4,Coordination fingerprint,specific rule,1,Coordination fingerprint,1,False,False
+47,std_dev square co-planar CN_4,Coordination fingerprint,specific rule,1,Coordination fingerprint,1,False,False
+48,mean tetrahedral CN_4,Coordination fingerprint,specific rule,1,Coordination fingerprint,1,False,False
+49,std_dev tetrahedral CN_4,Coordination fingerprint,specific rule,1,Coordination fingerprint,1,False,False
+50,mean rectangular see-saw-like CN_4,Coordination fingerprint,specific rule,1,Coordination fingerprint,1,False,False
+51,std_dev rectangular see-saw-like CN_4,Coordination fingerprint,specific rule,1,Coordination fingerprint,1,False,False
+52,mean see-saw-like CN_4,Coordination fingerprint,specific rule,1,Coordination fingerprint,1,False,False
+53,std_dev see-saw-like CN_4,Coordination fingerprint,specific rule,1,Coordination fingerprint,1,False,False
+54,mean trigonal pyramidal CN_4,Coordination fingerprint,specific rule,1,Coordination fingerprint,1,False,False
+55,std_dev trigonal pyramidal CN_4,Coordination fingerprint,specific rule,1,Coordination fingerprint,1,False,False
+56,mean wt CN_5,Coordination fingerprint,specific rule,1,Coordination fingerprint,1,False,False
+57,std_dev wt CN_5,Coordination fingerprint,specific rule,1,Coordination fingerprint,1,False,False
+58,mean pentagonal planar CN_5,Coordination fingerprint,specific rule,1,Coordination fingerprint,1,False,False
+59,std_dev pentagonal planar CN_5,Coordination fingerprint,specific rule,1,Coordination fingerprint,1,False,False
+60,mean square pyramidal CN_5,Coordination fingerprint,specific rule,1,Coordination fingerprint,1,False,False
+61,std_dev square pyramidal CN_5,Coordination fingerprint,specific rule,1,Coordination fingerprint,1,False,False
+62,mean trigonal bipyramidal CN_5,Coordination fingerprint,specific rule,1,Coordination fingerprint,1,False,False
+63,std_dev trigonal bipyramidal CN_5,Coordination fingerprint,specific rule,1,Coordination fingerprint,1,False,False
+64,mean wt CN_6,Coordination fingerprint,specific rule,1,Coordination fingerprint,1,False,False
+65,std_dev wt CN_6,Coordination fingerprint,specific rule,1,Coordination fingerprint,1,False,False
+66,mean hexagonal planar CN_6,Coordination fingerprint,specific rule,1,Coordination fingerprint,1,False,False
+67,std_dev hexagonal planar CN_6,Coordination fingerprint,specific rule,1,Coordination fingerprint,1,False,False
+68,mean octahedral CN_6,Coordination fingerprint,specific rule,1,Coordination fingerprint,1,False,False
+69,std_dev octahedral CN_6,Coordination fingerprint,specific rule,1,Coordination fingerprint,1,False,False
+70,mean pentagonal pyramidal CN_6,Coordination fingerprint,specific rule,1,Coordination fingerprint,1,False,False
+71,std_dev pentagonal pyramidal CN_6,Coordination fingerprint,specific rule,1,Coordination fingerprint,1,False,False
+72,mean wt CN_7,Coordination fingerprint,specific rule,1,Coordination fingerprint,1,False,False
+73,std_dev wt CN_7,Coordination fingerprint,specific rule,1,Coordination fingerprint,1,False,False
+74,mean hexagonal pyramidal CN_7,Coordination fingerprint,specific rule,1,Coordination fingerprint,1,False,False
+75,std_dev hexagonal pyramidal CN_7,Coordination fingerprint,specific rule,1,Coordination fingerprint,1,False,False
+76,mean pentagonal bipyramidal CN_7,Coordination fingerprint,specific rule,1,Coordination fingerprint,1,False,False
+77,std_dev pentagonal bipyramidal CN_7,Coordination fingerprint,specific rule,1,Coordination fingerprint,1,False,False
+78,mean wt CN_8,Coordination fingerprint,specific rule,1,Coordination fingerprint,1,False,False
+79,std_dev wt CN_8,Coordination fingerprint,specific rule,1,Coordination fingerprint,1,False,False
+80,mean body-centered cubic CN_8,Coordination fingerprint,specific rule,1,Coordination fingerprint,1,False,False
+81,std_dev body-centered cubic CN_8,Coordination fingerprint,specific rule,1,Coordination fingerprint,1,False,False
+82,mean hexagonal bipyramidal CN_8,Coordination fingerprint,specific rule,1,Coordination fingerprint,1,False,False
+83,std_dev hexagonal bipyramidal CN_8,Coordination fingerprint,specific rule,1,Coordination fingerprint,1,False,False
+84,mean wt CN_9,Coordination fingerprint,specific rule,1,Coordination fingerprint,1,False,False
+85,std_dev wt CN_9,Coordination fingerprint,specific rule,1,Coordination fingerprint,1,False,False
+86,mean q2 CN_9,Coordination fingerprint,specific rule,1,Coordination fingerprint,1,False,False
+87,std_dev q2 CN_9,Coordination fingerprint,specific rule,1,Coordination fingerprint,1,False,False
+88,mean q4 CN_9,Coordination fingerprint,specific rule,1,Coordination fingerprint,1,False,False
+89,std_dev q4 CN_9,Coordination fingerprint,specific rule,1,Coordination fingerprint,1,False,False
+90,mean q6 CN_9,Coordination fingerprint,specific rule,1,Coordination fingerprint,1,False,False
+91,std_dev q6 CN_9,Coordination fingerprint,specific rule,1,Coordination fingerprint,1,False,False
+92,mean wt CN_10,Coordination fingerprint,specific rule,1,Coordination fingerprint,1,False,False
+93,std_dev wt CN_10,Coordination fingerprint,specific rule,1,Coordination fingerprint,1,False,False
+94,mean q2 CN_10,Coordination fingerprint,specific rule,1,Coordination fingerprint,1,False,False
+95,std_dev q2 CN_10,Coordination fingerprint,specific rule,1,Coordination fingerprint,1,False,False
+96,mean q4 CN_10,Coordination fingerprint,specific rule,1,Coordination fingerprint,1,False,False
+97,std_dev q4 CN_10,Coordination fingerprint,specific rule,1,Coordination fingerprint,1,False,False
+98,mean q6 CN_10,Coordination fingerprint,specific rule,1,Coordination fingerprint,1,False,False
+99,std_dev q6 CN_10,Coordination fingerprint,specific rule,1,Coordination fingerprint,1,False,False
+100,mean wt CN_11,Coordination fingerprint,specific rule,1,Coordination fingerprint,1,False,False
+101,std_dev wt CN_11,Coordination fingerprint,specific rule,1,Coordination fingerprint,1,False,False
+102,mean q2 CN_11,Coordination fingerprint,specific rule,1,Coordination fingerprint,1,False,False
+103,std_dev q2 CN_11,Coordination fingerprint,specific rule,1,Coordination fingerprint,1,False,False
+104,mean q4 CN_11,Coordination fingerprint,specific rule,1,Coordination fingerprint,1,False,False
+105,std_dev q4 CN_11,Coordination fingerprint,specific rule,1,Coordination fingerprint,1,False,False
+106,mean q6 CN_11,Coordination fingerprint,specific rule,1,Coordination fingerprint,1,False,False
+107,std_dev q6 CN_11,Coordination fingerprint,specific rule,1,Coordination fingerprint,1,False,False
+108,mean wt CN_12,Coordination fingerprint,specific rule,1,Coordination fingerprint,1,False,False
+109,std_dev wt CN_12,Coordination fingerprint,specific rule,1,Coordination fingerprint,1,False,False
+110,mean cuboctahedral CN_12,Coordination fingerprint,specific rule,1,Coordination fingerprint,1,False,False
+111,std_dev cuboctahedral CN_12,Coordination fingerprint,specific rule,1,Coordination fingerprint,1,False,False
+112,mean q2 CN_12,Coordination fingerprint,specific rule,1,Coordination fingerprint,1,False,False
+113,std_dev q2 CN_12,Coordination fingerprint,specific rule,1,Coordination fingerprint,1,False,False
+114,mean q4 CN_12,Coordination fingerprint,specific rule,1,Coordination fingerprint,1,False,False
+115,std_dev q4 CN_12,Coordination fingerprint,specific rule,1,Coordination fingerprint,1,False,False
+116,mean q6 CN_12,Coordination fingerprint,specific rule,1,Coordination fingerprint,1,False,False
+117,std_dev q6 CN_12,Coordination fingerprint,specific rule,1,Coordination fingerprint,1,False,False
+118,mean wt CN_13,Coordination fingerprint,specific rule,1,Coordination fingerprint,1,False,False
+119,std_dev wt CN_13,Coordination fingerprint,specific rule,1,Coordination fingerprint,1,False,False
+120,mean wt CN_14,Coordination fingerprint,specific rule,1,Coordination fingerprint,1,False,False
+121,std_dev wt CN_14,Coordination fingerprint,specific rule,1,Coordination fingerprint,1,False,False
+122,mean wt CN_15,Coordination fingerprint,specific rule,1,Coordination fingerprint,1,False,False
+123,std_dev wt CN_15,Coordination fingerprint,specific rule,1,Coordination fingerprint,1,False,False
+124,mean wt CN_16,Coordination fingerprint,specific rule,1,Coordination fingerprint,1,False,False
+125,std_dev wt CN_16,Coordination fingerprint,specific rule,1,Coordination fingerprint,1,False,False
+126,mean wt CN_17,Coordination fingerprint,specific rule,1,Coordination fingerprint,1,False,False
+127,std_dev wt CN_17,Coordination fingerprint,specific rule,1,Coordination fingerprint,1,False,False
+128,mean wt CN_18,Coordination fingerprint,specific rule,1,Coordination fingerprint,1,False,False
+129,std_dev wt CN_18,Coordination fingerprint,specific rule,1,Coordination fingerprint,1,False,False
+130,mean wt CN_19,Coordination fingerprint,specific rule,1,Coordination fingerprint,1,False,False
+131,std_dev wt CN_19,Coordination fingerprint,specific rule,1,Coordination fingerprint,1,False,False
+132,mean wt CN_20,Coordination fingerprint,specific rule,1,Coordination fingerprint,1,False,False
+133,std_dev wt CN_20,Coordination fingerprint,specific rule,1,Coordination fingerprint,1,False,False
+134,mean wt CN_21,Coordination fingerprint,specific rule,1,Coordination fingerprint,1,False,False
+135,std_dev wt CN_21,Coordination fingerprint,specific rule,1,Coordination fingerprint,1,False,False
+136,mean wt CN_22,Coordination fingerprint,specific rule,1,Coordination fingerprint,1,False,False
+137,std_dev wt CN_22,Coordination fingerprint,specific rule,1,Coordination fingerprint,1,False,False
+138,mean wt CN_23,Coordination fingerprint,specific rule,1,Coordination fingerprint,1,False,False
+139,std_dev wt CN_23,Coordination fingerprint,specific rule,1,Coordination fingerprint,1,False,False
+140,mean wt CN_24,Coordination fingerprint,specific rule,1,Coordination fingerprint,1,False,False
+141,std_dev wt CN_24,Coordination fingerprint,specific rule,1,Coordination fingerprint,1,False,False
+142,MagpieData minimum Number,Periodic position (comp),specific rule,1,Periodic position (comp),1,False,False
+143,MagpieData maximum Number,Periodic position (comp),specific rule,1,Periodic position (comp),1,False,False
+144,MagpieData range Number,Periodic position (comp),specific rule,1,Periodic position (comp),1,False,False
+145,MagpieData mean Number,Periodic position (comp),specific rule,1,Periodic position (comp),1,False,False
+146,MagpieData avg_dev Number,Periodic position (comp),specific rule,1,Periodic position (comp),1,False,False
+147,MagpieData mode Number,Periodic position (comp),specific rule,1,Periodic position (comp),1,False,False
+148,MagpieData minimum MendeleevNumber,Periodic position (comp),specific rule,1,Periodic position (comp),1,False,False
+149,MagpieData maximum MendeleevNumber,Periodic position (comp),specific rule,1,Periodic position (comp),1,False,False
+150,MagpieData range MendeleevNumber,Periodic position (comp),specific rule,1,Periodic position (comp),1,False,False
+151,MagpieData mean MendeleevNumber,Periodic position (comp),specific rule,1,Periodic position (comp),1,False,False
+152,MagpieData avg_dev MendeleevNumber,Periodic position (comp),specific rule,1,Periodic position (comp),1,False,False
+153,MagpieData mode MendeleevNumber,Periodic position (comp),specific rule,1,Periodic position (comp),1,False,False
+154,MagpieData minimum AtomicWeight,Atomic size (comp),specific rule,1,Atomic size (comp),1,False,False
+155,MagpieData maximum AtomicWeight,Atomic size (comp),specific rule,1,Atomic size (comp),1,False,False
+156,MagpieData range AtomicWeight,Atomic size (comp),specific rule,1,Atomic size (comp),1,False,False
+157,MagpieData mean AtomicWeight,Atomic size (comp),specific rule,1,Atomic size (comp),1,False,False
+158,MagpieData avg_dev AtomicWeight,Atomic size (comp),specific rule,1,Atomic size (comp),1,False,False
+159,MagpieData mode AtomicWeight,Atomic size (comp),specific rule,1,Atomic size (comp),1,False,False
+160,MagpieData minimum MeltingT,Bond strength (comp),specific rule,1,Bond strength (comp),1,False,False
+161,MagpieData maximum MeltingT,Bond strength (comp),specific rule,1,Bond strength (comp),1,False,False
+162,MagpieData range MeltingT,Bond strength (comp),specific rule,1,Bond strength (comp),1,False,False
+163,MagpieData mean MeltingT,Bond strength (comp),specific rule,1,Bond strength (comp),1,False,False
+164,MagpieData avg_dev MeltingT,Bond strength (comp),specific rule,1,Bond strength (comp),1,False,False
+165,MagpieData mode MeltingT,Bond strength (comp),specific rule,1,Bond strength (comp),1,False,False
+166,MagpieData minimum Column,Periodic position (comp),specific rule,1,Periodic position (comp),1,False,False
+167,MagpieData maximum Column,Periodic position (comp),specific rule,1,Periodic position (comp),1,False,False
+168,MagpieData range Column,Periodic position (comp),specific rule,1,Periodic position (comp),1,False,False
+169,MagpieData mean Column,Periodic position (comp),specific rule,1,Periodic position (comp),1,False,False
+170,MagpieData avg_dev Column,Periodic position (comp),specific rule,1,Periodic position (comp),1,False,False
+171,MagpieData mode Column,Periodic position (comp),specific rule,1,Periodic position (comp),1,False,False
+172,MagpieData minimum Row,Atomic size (comp),specific rule,1,Atomic size (comp),1,False,False
+173,MagpieData maximum Row,Atomic size (comp),specific rule,1,Atomic size (comp),1,False,False
+174,MagpieData range Row,Atomic size (comp),specific rule,1,Atomic size (comp),1,False,False
+175,MagpieData mean Row,Atomic size (comp),specific rule,1,Atomic size (comp),1,False,False
+176,MagpieData avg_dev Row,Atomic size (comp),specific rule,1,Atomic size (comp),1,False,False
+177,MagpieData mode Row,Atomic size (comp),specific rule,1,Atomic size (comp),1,False,False
+178,MagpieData minimum CovalentRadius,Atomic size (comp),specific rule,1,Atomic size (comp),1,False,False
+179,MagpieData maximum CovalentRadius,Atomic size (comp),specific rule,1,Atomic size (comp),1,False,False
+180,MagpieData range CovalentRadius,Atomic size (comp),specific rule,1,Atomic size (comp),1,False,False
+181,MagpieData mean CovalentRadius,Atomic size (comp),specific rule,1,Atomic size (comp),1,False,False
+182,MagpieData avg_dev CovalentRadius,Atomic size (comp),specific rule,1,Atomic size (comp),1,False,False
+183,MagpieData mode CovalentRadius,Atomic size (comp),specific rule,1,Atomic size (comp),1,False,False
+184,MagpieData minimum Electronegativity,Ionicity,specific rule,1,Ionicity,1,False,False
+185,MagpieData maximum Electronegativity,Ionicity,specific rule,1,Ionicity,1,False,False
+186,MagpieData range Electronegativity,Ionicity,specific rule,1,Ionicity,1,False,False
+187,MagpieData mean Electronegativity,Ionicity,specific rule,1,Ionicity,1,False,False
+188,MagpieData avg_dev Electronegativity,Ionicity,specific rule,1,Ionicity,1,False,False
+189,MagpieData mode Electronegativity,Ionicity,specific rule,1,Ionicity,1,False,False
+190,MagpieData minimum NsValence,d/p electron count (comp),specific rule,1,d/p electron count (comp),1,False,False
+191,MagpieData maximum NsValence,d/p electron count (comp),specific rule,1,d/p electron count (comp),1,False,False
+192,MagpieData range NsValence,d/p electron count (comp),specific rule,1,d/p electron count (comp),1,False,False
+193,MagpieData mean NsValence,d/p electron count (comp),specific rule,1,d/p electron count (comp),1,False,False
+194,MagpieData avg_dev NsValence,d/p electron count (comp),specific rule,1,d/p electron count (comp),1,False,False
+195,MagpieData mode NsValence,d/p electron count (comp),specific rule,1,d/p electron count (comp),1,False,False
+196,MagpieData minimum NpValence,d/p electron count (comp),specific rule,1,d/p electron count (comp),1,False,False
+197,MagpieData maximum NpValence,d/p electron count (comp),specific rule,1,d/p electron count (comp),1,False,False
+198,MagpieData range NpValence,d/p electron count (comp),specific rule,1,d/p electron count (comp),1,False,False
+199,MagpieData mean NpValence,d/p electron count (comp),specific rule,1,d/p electron count (comp),1,False,False
+200,MagpieData avg_dev NpValence,d/p electron count (comp),specific rule,1,d/p electron count (comp),1,False,False
+201,MagpieData mode NpValence,d/p electron count (comp),specific rule,1,d/p electron count (comp),1,False,False
+202,MagpieData minimum NdValence,d/p electron count (comp),specific rule,1,d/p electron count (comp),1,False,False
+203,MagpieData maximum NdValence,d/p electron count (comp),specific rule,1,d/p electron count (comp),1,False,False
+204,MagpieData range NdValence,d/p electron count (comp),specific rule,1,d/p electron count (comp),1,False,False
+205,MagpieData mean NdValence,d/p electron count (comp),specific rule,1,d/p electron count (comp),1,False,False
+206,MagpieData avg_dev NdValence,d/p electron count (comp),specific rule,1,d/p electron count (comp),1,False,False
+207,MagpieData mode NdValence,d/p electron count (comp),specific rule,1,d/p electron count (comp),1,False,False
+208,MagpieData minimum NfValence,d/p electron count (comp),specific rule,1,d/p electron count (comp),1,False,False
+209,MagpieData maximum NfValence,d/p electron count (comp),specific rule,1,d/p electron count (comp),1,False,False
+210,MagpieData range NfValence,d/p electron count (comp),specific rule,1,d/p electron count (comp),1,False,False
+211,MagpieData mean NfValence,d/p electron count (comp),specific rule,1,d/p electron count (comp),1,False,False
+212,MagpieData avg_dev NfValence,d/p electron count (comp),specific rule,1,d/p electron count (comp),1,False,False
+213,MagpieData mode NfValence,d/p electron count (comp),specific rule,1,d/p electron count (comp),1,False,False
+214,MagpieData minimum NValence,Valence total (comp),specific rule,1,Valence total (comp),1,False,False
+215,MagpieData maximum NValence,Valence total (comp),specific rule,1,Valence total (comp),1,False,False
+216,MagpieData range NValence,Valence total (comp),specific rule,1,Valence total (comp),1,False,False
+217,MagpieData mean NValence,Valence total (comp),specific rule,1,Valence total (comp),1,False,False
+218,MagpieData avg_dev NValence,Valence total (comp),specific rule,1,Valence total (comp),1,False,False
+219,MagpieData mode NValence,Valence total (comp),specific rule,1,Valence total (comp),1,False,False
+220,MagpieData minimum NsUnfilled,Unfilled orbitals (comp),specific rule,1,Unfilled orbitals (comp),1,False,False
+221,MagpieData maximum NsUnfilled,Unfilled orbitals (comp),specific rule,1,Unfilled orbitals (comp),1,False,False
+222,MagpieData range NsUnfilled,Unfilled orbitals (comp),specific rule,1,Unfilled orbitals (comp),1,False,False
+223,MagpieData mean NsUnfilled,Unfilled orbitals (comp),specific rule,1,Unfilled orbitals (comp),1,False,False
+224,MagpieData avg_dev NsUnfilled,Unfilled orbitals (comp),specific rule,1,Unfilled orbitals (comp),1,False,False
+225,MagpieData mode NsUnfilled,Unfilled orbitals (comp),specific rule,1,Unfilled orbitals (comp),1,False,False
+226,MagpieData minimum NpUnfilled,Unfilled orbitals (comp),specific rule,1,Unfilled orbitals (comp),1,False,False
+227,MagpieData maximum NpUnfilled,Unfilled orbitals (comp),specific rule,1,Unfilled orbitals (comp),1,False,False
+228,MagpieData range NpUnfilled,Unfilled orbitals (comp),specific rule,1,Unfilled orbitals (comp),1,False,False
+229,MagpieData mean NpUnfilled,Unfilled orbitals (comp),specific rule,1,Unfilled orbitals (comp),1,False,False
+230,MagpieData avg_dev NpUnfilled,Unfilled orbitals (comp),specific rule,1,Unfilled orbitals (comp),1,False,False
+231,MagpieData mode NpUnfilled,Unfilled orbitals (comp),specific rule,1,Unfilled orbitals (comp),1,False,False
+232,MagpieData minimum NdUnfilled,Unfilled orbitals (comp),specific rule,1,Unfilled orbitals (comp),1,False,False
+233,MagpieData maximum NdUnfilled,Unfilled orbitals (comp),specific rule,1,Unfilled orbitals (comp),1,False,False
+234,MagpieData range NdUnfilled,Unfilled orbitals (comp),specific rule,1,Unfilled orbitals (comp),1,False,False
+235,MagpieData mean NdUnfilled,Unfilled orbitals (comp),specific rule,1,Unfilled orbitals (comp),1,False,False
+236,MagpieData avg_dev NdUnfilled,Unfilled orbitals (comp),specific rule,1,Unfilled orbitals (comp),1,False,False
+237,MagpieData mode NdUnfilled,Unfilled orbitals (comp),specific rule,1,Unfilled orbitals (comp),1,False,False
+238,MagpieData minimum NfUnfilled,Unfilled orbitals (comp),specific rule,1,Unfilled orbitals (comp),1,False,False
+239,MagpieData maximum NfUnfilled,Unfilled orbitals (comp),specific rule,1,Unfilled orbitals (comp),1,False,False
+240,MagpieData range NfUnfilled,Unfilled orbitals (comp),specific rule,1,Unfilled orbitals (comp),1,False,False
+241,MagpieData mean NfUnfilled,Unfilled orbitals (comp),specific rule,1,Unfilled orbitals (comp),1,False,False
+242,MagpieData avg_dev NfUnfilled,Unfilled orbitals (comp),specific rule,1,Unfilled orbitals (comp),1,False,False
+243,MagpieData mode NfUnfilled,Unfilled orbitals (comp),specific rule,1,Unfilled orbitals (comp),1,False,False
+244,MagpieData minimum NUnfilled,Unfilled orbitals (comp),specific rule,1,Unfilled orbitals (comp),1,False,False
+245,MagpieData maximum NUnfilled,Unfilled orbitals (comp),specific rule,1,Unfilled orbitals (comp),1,False,False
+246,MagpieData range NUnfilled,Unfilled orbitals (comp),specific rule,1,Unfilled orbitals (comp),1,False,False
+247,MagpieData mean NUnfilled,Unfilled orbitals (comp),specific rule,1,Unfilled orbitals (comp),1,False,False
+248,MagpieData avg_dev NUnfilled,Unfilled orbitals (comp),specific rule,1,Unfilled orbitals (comp),1,False,False
+249,MagpieData mode NUnfilled,Unfilled orbitals (comp),specific rule,1,Unfilled orbitals (comp),1,False,False
+250,MagpieData minimum GSvolume_pa,Atomic size (comp),specific rule,1,Atomic size (comp),1,False,False
+251,MagpieData maximum GSvolume_pa,Atomic size (comp),specific rule,1,Atomic size (comp),1,False,False
+252,MagpieData range GSvolume_pa,Atomic size (comp),specific rule,1,Atomic size (comp),1,False,False
+253,MagpieData mean GSvolume_pa,Atomic size (comp),specific rule,1,Atomic size (comp),1,False,False
+254,MagpieData avg_dev GSvolume_pa,Atomic size (comp),specific rule,1,Atomic size (comp),1,False,False
+255,MagpieData mode GSvolume_pa,Atomic size (comp),specific rule,1,Atomic size (comp),1,False,False
+256,MagpieData minimum GSbandgap,Band-gap prior (comp),specific rule,1,Band-gap prior (comp),1,False,False
+257,MagpieData maximum GSbandgap,Band-gap prior (comp),specific rule,1,Band-gap prior (comp),1,False,False
+258,MagpieData range GSbandgap,Band-gap prior (comp),specific rule,1,Band-gap prior (comp),1,False,False
+259,MagpieData mean GSbandgap,Band-gap prior (comp),specific rule,1,Band-gap prior (comp),1,False,False
+260,MagpieData avg_dev GSbandgap,Band-gap prior (comp),specific rule,1,Band-gap prior (comp),1,False,False
+261,MagpieData mode GSbandgap,Band-gap prior (comp),specific rule,1,Band-gap prior (comp),1,False,False
+262,MagpieData minimum GSmagmom,Magnetic moment (comp),specific rule,1,Magnetic moment (comp),1,False,False
+263,MagpieData maximum GSmagmom,Magnetic moment (comp),specific rule,1,Magnetic moment (comp),1,False,False
+264,MagpieData range GSmagmom,Magnetic moment (comp),specific rule,1,Magnetic moment (comp),1,False,False
+265,MagpieData mean GSmagmom,Magnetic moment (comp),specific rule,1,Magnetic moment (comp),1,False,False
+266,MagpieData avg_dev GSmagmom,Magnetic moment (comp),specific rule,1,Magnetic moment (comp),1,False,False
+267,MagpieData mode GSmagmom,Magnetic moment (comp),specific rule,1,Magnetic moment (comp),1,False,False
+268,MagpieData minimum SpaceGroupNumber,Periodic position (comp),specific rule,1,Periodic position (comp),1,False,False
+269,MagpieData maximum SpaceGroupNumber,Periodic position (comp),specific rule,1,Periodic position (comp),1,False,False
+270,MagpieData range SpaceGroupNumber,Periodic position (comp),specific rule,1,Periodic position (comp),1,False,False
+271,MagpieData mean SpaceGroupNumber,Periodic position (comp),specific rule,1,Periodic position (comp),1,False,False
+272,MagpieData avg_dev SpaceGroupNumber,Periodic position (comp),specific rule,1,Periodic position (comp),1,False,False
+273,MagpieData mode SpaceGroupNumber,Periodic position (comp),specific rule,1,Periodic position (comp),1,False,False
+274,band center,BandCenter (L2 only),specific rule,1,BandCenter (L2 only),1,False,True
+275,crystal_system_cubic,Global symmetry,specific rule,1,Global symmetry,1,False,False
+276,crystal_system_hexagonal,Global symmetry,specific rule,1,Global symmetry,1,False,False
+277,crystal_system_monoclinic,Global symmetry,specific rule,1,Global symmetry,1,False,False
+278,crystal_system_orthorhombic,Global symmetry,specific rule,1,Global symmetry,1,False,False
+279,crystal_system_tetragonal,Global symmetry,specific rule,1,Global symmetry,1,False,False
+280,crystal_system_triclinic,Global symmetry,specific rule,1,Global symmetry,1,False,False
+281,crystal_system_trigonal,Global symmetry,specific rule,1,Global symmetry,1,False,False
+282,crystal_system_nan,Global symmetry,specific rule,1,Global symmetry,1,False,False

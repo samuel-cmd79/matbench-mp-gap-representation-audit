@@ -1,6 +1,6 @@
 # Fold-conditioned repeated-composition oracle audit
 
-- Run time: `2026-08-15T16:14:36.306983-04:00`
+- Run time: `2026-10-19T14:54:53.736555-04:00`
 - Python: `3.9.23`
 - NumPy: `2.0.2`
 - pandas: `2.3.1`
@@ -16,21 +16,21 @@ L1/L2 NPY files contain predictions only. Their IDs were reconstructed from the 
 
 | Level | Fold | Input file | ID mapping | SHA-256 prefix |
 | --- | --- | --- | --- | --- |
-| L1 | 0 | ${HOME}/material_projects_structure/outputs_v1_run0709/predictions_xgb/pred_fold_0.npy | official MatBench test-fold position reconstructed from reviewed generator | b6b18988c3b1adaa… |
-| L1 | 1 | ${HOME}/material_projects_structure/outputs_v1_run0709/predictions_xgb/pred_fold_1.npy | official MatBench test-fold position reconstructed from reviewed generator | b8e844983ad9e4a8… |
-| L1 | 2 | ${HOME}/material_projects_structure/outputs_v1_run0709/predictions_xgb/pred_fold_2.npy | official MatBench test-fold position reconstructed from reviewed generator | 0830e8bf36472c01… |
-| L1 | 3 | ${HOME}/material_projects_structure/outputs_v1_run0709/predictions_xgb/pred_fold_3.npy | official MatBench test-fold position reconstructed from reviewed generator | 297ef6cddff778fe… |
-| L1 | 4 | ${HOME}/material_projects_structure/outputs_v1_run0709/predictions_xgb/pred_fold_4.npy | official MatBench test-fold position reconstructed from reviewed generator | e5539f2caaaaf13a… |
-| L2 | 0 | ${HOME}/material_projects_structure/matbench_outputs_v2_run0709/predictions_xgb/pred_fold_0.npy | official MatBench test-fold position reconstructed from reviewed generator | 4ee57cb69d9927e4… |
-| L2 | 1 | ${HOME}/material_projects_structure/matbench_outputs_v2_run0709/predictions_xgb/pred_fold_1.npy | official MatBench test-fold position reconstructed from reviewed generator | cb65c1fb8e3ae208… |
-| L2 | 2 | ${HOME}/material_projects_structure/matbench_outputs_v2_run0709/predictions_xgb/pred_fold_2.npy | official MatBench test-fold position reconstructed from reviewed generator | 75605a1468fd61b1… |
-| L2 | 3 | ${HOME}/material_projects_structure/matbench_outputs_v2_run0709/predictions_xgb/pred_fold_3.npy | official MatBench test-fold position reconstructed from reviewed generator | b2e8bbb520347c68… |
-| L2 | 4 | ${HOME}/material_projects_structure/matbench_outputs_v2_run0709/predictions_xgb/pred_fold_4.npy | official MatBench test-fold position reconstructed from reviewed generator | 3d02b1c0f63978ee… |
-| L3 | 0 | ${HOME}/material_projects_structure/results_v4/fold_0/test_preds_clipped.npz | direct ID join from NPZ | a4cfe70ce0a062fb… |
-| L3 | 1 | ${HOME}/material_projects_structure/results_v4/fold_1/test_preds_clipped.npz | direct ID join from NPZ | 9c58c60c70f8571d… |
-| L3 | 2 | ${HOME}/material_projects_structure/results_v4/fold_2/test_preds_clipped.npz | direct ID join from NPZ | 557c78b09d1aa206… |
-| L3 | 3 | ${HOME}/material_projects_structure/results_v4/fold_3/test_preds_clipped.npz | direct ID join from NPZ | 2524f288aab2a1a7… |
-| L3 | 4 | ${HOME}/material_projects_structure/results_v4/fold_4/test_preds_clipped.npz | direct ID join from NPZ | 93f88a812ee34018… |
+| L1 | 0 | outputs_v1_run0709/predictions_xgb/pred_fold_0.npy | official MatBench test-fold position reconstructed from reviewed generator | b6b18988c3b1adaa… |
+| L1 | 1 | outputs_v1_run0709/predictions_xgb/pred_fold_1.npy | official MatBench test-fold position reconstructed from reviewed generator | b8e844983ad9e4a8… |
+| L1 | 2 | outputs_v1_run0709/predictions_xgb/pred_fold_2.npy | official MatBench test-fold position reconstructed from reviewed generator | 0830e8bf36472c01… |
+| L1 | 3 | outputs_v1_run0709/predictions_xgb/pred_fold_3.npy | official MatBench test-fold position reconstructed from reviewed generator | 297ef6cddff778fe… |
+| L1 | 4 | outputs_v1_run0709/predictions_xgb/pred_fold_4.npy | official MatBench test-fold position reconstructed from reviewed generator | e5539f2caaaaf13a… |
+| L2 | 0 | matbench_outputs_v2_run0709/predictions_xgb/pred_fold_0.npy | official MatBench test-fold position reconstructed from reviewed generator | 4ee57cb69d9927e4… |
+| L2 | 1 | matbench_outputs_v2_run0709/predictions_xgb/pred_fold_1.npy | official MatBench test-fold position reconstructed from reviewed generator | cb65c1fb8e3ae208… |
+| L2 | 2 | matbench_outputs_v2_run0709/predictions_xgb/pred_fold_2.npy | official MatBench test-fold position reconstructed from reviewed generator | 75605a1468fd61b1… |
+| L2 | 3 | matbench_outputs_v2_run0709/predictions_xgb/pred_fold_3.npy | official MatBench test-fold position reconstructed from reviewed generator | b2e8bbb520347c68… |
+| L2 | 4 | matbench_outputs_v2_run0709/predictions_xgb/pred_fold_4.npy | official MatBench test-fold position reconstructed from reviewed generator | 3d02b1c0f63978ee… |
+| L3 | 0 | results_v4/fold_0/test_preds_clipped.npz | direct ID join from NPZ | a4cfe70ce0a062fb… |
+| L3 | 1 | results_v4/fold_1/test_preds_clipped.npz | direct ID join from NPZ | 9c58c60c70f8571d… |
+| L3 | 2 | results_v4/fold_2/test_preds_clipped.npz | direct ID join from NPZ | 557c78b09d1aa206… |
+| L3 | 3 | results_v4/fold_3/test_preds_clipped.npz | direct ID join from NPZ | 2524f288aab2a1a7… |
+| L3 | 4 | results_v4/fold_4/test_preds_clipped.npz | direct ID join from NPZ | 93f88a812ee34018… |
 
 ## Definitions
 
@@ -127,7 +127,7 @@ Main table for `same_fold_repeated_subset`:
 | >1 eV | 0.308829 | 0.016485 | [-0.014811, 0.053171] | inconclusive_ci_includes_zero | -0.082437 | [-0.110574, -0.050507] | robust_undercut_ci_upper_below_zero |
 
 Both populations are available in `polymorph_bound_bootstrap_by_spread.csv`.
-The main same-fold CI evidence is visualized in `polymorph_bound_delta_ci_by_spread.png`.
+The main same-fold CI evidence is visualized in `polymorph_bound_delta_ci_by_spread_v2.png`.
 
 ## Assertions
 
@@ -219,6 +219,6 @@ The manuscript's old `0.1539 eV` value may be retained only with the renamed glo
 - `polymorph_bound_bootstrap.csv`
 - `polymorph_bound_bootstrap_by_spread.csv`
 - `repeated_composition_groups_top.csv`
-- `polymorph_bound_by_spread.png`
-- `polymorph_bound_delta_ci_by_spread.png`
+- `polymorph_bound_by_spread_v2.png`
+- `polymorph_bound_delta_ci_by_spread_v2.png`
 - `polymorph_bound_audit.md`

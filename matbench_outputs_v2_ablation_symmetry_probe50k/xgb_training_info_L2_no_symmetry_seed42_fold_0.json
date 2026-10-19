@@ -1,0 +1,14 @@
+{
+  "config": "L2_no_symmetry",
+  "seed": 42,
+  "fold": 0,
+  "test_mode": false,
+  "best_iteration": 50105,
+  "best_validation_mae": 0.31071066149064963,
+  "n_rounds_run": 50306,
+  "num_boost_round_max": 100000,
+  "early_stopping_rounds": 200,
+  "early_stopped": true,
+  "train_seconds": 553.187,
+  "xgboost_version": "2.1.4"
+}

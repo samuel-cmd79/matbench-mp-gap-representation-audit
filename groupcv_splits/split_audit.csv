@@ -1,0 +1,6 @@
+fold,n_fit,n_val,val_frac,overlap_fit_val,overlap_train_test,L1_test_match,L1_fit_match,L1_val_match,L2_test_match,L2_fit_match,L2_val_match
+0,67322,17568,0.20695,0,0,True,True,True,True,True,True
+1,67865,17025,0.200554,0,0,True,True,True,True,True,True
+2,68591,16299,0.192001,0,0,True,True,True,True,True,True
+3,67467,17424,0.205251,0,0,True,True,True,True,True,True
+4,67678,17213,0.202766,0,0,True,True,True,True,True,True

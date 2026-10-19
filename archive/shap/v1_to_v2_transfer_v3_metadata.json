@@ -1,0 +1,9 @@
+{
+  "n common composition features": 132,
+  "BandCenter excluded": true,
+  "Ionicity feature count": 6,
+  "Ionicity features": "MagpieData avg_dev Electronegativity | MagpieData maximum Electronegativity | MagpieData mean Electronegativity | MagpieData minimum Electronegativity | MagpieData mode Electronegativity | MagpieData range Electronegativity",
+  "Ionicity transfer change (%)": -20.12044971479066,
+  "Original -20.1% holds after rounding": true,
+  "formula": "100 * (A_L2 - A_L1) / A_L1"
+}

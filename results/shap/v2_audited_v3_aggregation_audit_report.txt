@@ -54,16 +54,16 @@ SHAP share is never substituted for Deletion ΔMAE.
 Reference group checks
 ----------------------
        Feature group                       metric  reference  calculated  rounding decimals  absolute difference  absolute tolerance status
-BandCenter (L2 only)                    n columns   1.000000    1.000000                  0         0.000000e+00            0.000000  MATCH
-BandCenter (L2 only)         Group SHAP share (%)   0.642706    0.642706                  6         2.749863e-07            0.000005  MATCH
-            Ionicity                    n columns   6.000000    6.000000                  0         0.000000e+00            0.000000  MATCH
-            Ionicity         Group SHAP share (%)   6.286173    6.286172                  6         6.100159e-07            0.000005  MATCH
-            Ionicity Mean share/column (%/column)   1.047696    1.047695                  6         6.016693e-07            0.000005  MATCH
+BandCenter (L2 only)                    n columns   1.000000    1.000000                  0         0.000000e+00             0.00000  MATCH
+BandCenter (L2 only)         Group SHAP share (%)   0.642706    0.642706                  6         2.749863e-07             0.00001  MATCH
+            Ionicity                    n columns   6.000000    6.000000                  0         0.000000e+00             0.00000  MATCH
+            Ionicity         Group SHAP share (%)   6.286173    6.286172                  6         6.100159e-07             0.00001  MATCH
+            Ionicity Mean share/column (%/column)   1.047696    1.047695                  6         6.016693e-07             0.00001  MATCH
 
 Structural-total check
 ----------------------
                                              aggregation method  calculated structural total (%)  reference structural total (%)  complete total absolute difference  complete total absolute tolerance complete total status  n columns  BandCenter included  major four structural groups (%)  major four rounded reference (%) major four status  Dimensionality + Other structure (%)  secondary rounded reference (%) secondary status status
-normalize within each fold, then average the five folds equally                         46.50592                        46.50592                        4.101562e-07                           0.000005                 MATCH        150                False                         46.247944                              46.2             MATCH                              0.257976                              0.3            MATCH  MATCH
+normalize within each fold, then average the five folds equally                         46.50592                        46.50592                        4.101562e-07                            0.00001                 MATCH        150                False                         46.247944                              46.2             MATCH                              0.257976                              0.3            MATCH  MATCH
 
 Suggested manuscript sentence
 -----------------------------

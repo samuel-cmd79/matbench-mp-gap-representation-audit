@@ -1,0 +1,133 @@
+feature,Feature group,A_L1 = absolute mean(|SHAP|),A_L2 = absolute mean(|SHAP|),L1 denominator,transfer change (%),formula
+MagpieData avg_dev AtomicWeight,Atomic size (comp),0.011806847528,0.004951813258,0.011806847528,-58.059818705667,100 * (A_L2 - A_L1) / A_L1
+MagpieData avg_dev Column,Periodic position (comp),0.049661464989,0.043173048645,0.049661464989,-13.065293875926,100 * (A_L2 - A_L1) / A_L1
+MagpieData avg_dev CovalentRadius,Atomic size (comp),0.034279689193,0.012390277348,0.034279689193,-63.855339297909,100 * (A_L2 - A_L1) / A_L1
+MagpieData avg_dev Electronegativity,Ionicity,0.047484550625,0.048225849867,0.047484550625,1.561137742745,100 * (A_L2 - A_L1) / A_L1
+MagpieData avg_dev GSbandgap,Band-gap prior (comp),0.059124231339,0.026997029781,0.059124231339,-54.338468052503,100 * (A_L2 - A_L1) / A_L1
+MagpieData avg_dev GSmagmom,Magnetic moment (comp),0.015317378566,0.010583964176,0.015317378566,-30.902248507470,100 * (A_L2 - A_L1) / A_L1
+MagpieData avg_dev GSvolume_pa,Atomic size (comp),0.027685424313,0.022597771138,0.027685424313,-18.376648728540,100 * (A_L2 - A_L1) / A_L1
+MagpieData avg_dev MeltingT,Bond strength (comp),0.018770841882,0.009284188971,0.018770841882,-50.539304366481,100 * (A_L2 - A_L1) / A_L1
+MagpieData avg_dev MendeleevNumber,Periodic position (comp),0.017863281071,0.007789974101,0.017863281071,-56.391135145641,100 * (A_L2 - A_L1) / A_L1
+MagpieData avg_dev NUnfilled,Unfilled orbitals (comp),0.034818693995,0.020091814920,0.034818693995,-42.295897362156,100 * (A_L2 - A_L1) / A_L1
+MagpieData avg_dev NValence,Valence total (comp),0.042894914746,0.017287272960,0.042894914746,-59.698549205195,100 * (A_L2 - A_L1) / A_L1
+MagpieData avg_dev NdUnfilled,Unfilled orbitals (comp),0.024436747655,0.008728851564,0.024436747655,-64.279814616225,100 * (A_L2 - A_L1) / A_L1
+MagpieData avg_dev NdValence,d/p electron count (comp),0.032022960484,0.016663046554,0.032022960484,-47.965315193010,100 * (A_L2 - A_L1) / A_L1
+MagpieData avg_dev NfUnfilled,Unfilled orbitals (comp),0.003958980087,0.002805349650,0.003958980087,-29.139586760286,100 * (A_L2 - A_L1) / A_L1
+MagpieData avg_dev NfValence,d/p electron count (comp),0.006429990288,0.001883663470,0.006429990288,-70.705033979928,100 * (A_L2 - A_L1) / A_L1
+MagpieData avg_dev NpUnfilled,Unfilled orbitals (comp),0.035496346653,0.015467551537,0.035496346653,-56.424947929774,100 * (A_L2 - A_L1) / A_L1
+MagpieData avg_dev NpValence,d/p electron count (comp),0.031121367589,0.011516612954,0.031121367589,-62.994515193986,100 * (A_L2 - A_L1) / A_L1
+MagpieData avg_dev NsUnfilled,Unfilled orbitals (comp),0.007117358502,0.003958920483,0.007117358502,-44.376548105125,100 * (A_L2 - A_L1) / A_L1
+MagpieData avg_dev NsValence,d/p electron count (comp),0.018863851205,0.013666900806,0.018863851205,-27.549784728697,100 * (A_L2 - A_L1) / A_L1
+MagpieData avg_dev Number,Periodic position (comp),0.014634059742,0.005143899471,0.014634059742,-64.849812278872,100 * (A_L2 - A_L1) / A_L1
+MagpieData avg_dev Row,Atomic size (comp),0.016684604809,0.009592724033,0.016684604809,-42.505536434972,100 * (A_L2 - A_L1) / A_L1
+MagpieData avg_dev SpaceGroupNumber,Periodic position (comp),0.030244475231,0.020293449983,0.030244475231,-32.901960347172,100 * (A_L2 - A_L1) / A_L1
+MagpieData maximum AtomicWeight,Atomic size (comp),0.017155859619,0.010238775983,0.017155859619,-40.319073420913,100 * (A_L2 - A_L1) / A_L1
+MagpieData maximum Column,Periodic position (comp),0.023430913687,0.009950889274,0.023430913687,-57.530937941596,100 * (A_L2 - A_L1) / A_L1
+MagpieData maximum CovalentRadius,Atomic size (comp),0.018305111676,0.013846864924,0.018305111676,-24.355201057606,100 * (A_L2 - A_L1) / A_L1
+MagpieData maximum Electronegativity,Ionicity,0.143423110247,0.123360931873,0.143423110247,-13.988107173826,100 * (A_L2 - A_L1) / A_L1
+MagpieData maximum GSbandgap,Band-gap prior (comp),0.011062895879,0.007084903773,0.011062895879,-35.957963897378,100 * (A_L2 - A_L1) / A_L1
+MagpieData maximum GSmagmom,Magnetic moment (comp),0.025489602238,0.010127775371,0.025489602238,-60.267032507867,100 * (A_L2 - A_L1) / A_L1
+MagpieData maximum GSvolume_pa,Atomic size (comp),0.030316084623,0.015791213140,0.030316084623,-47.911436004715,100 * (A_L2 - A_L1) / A_L1
+MagpieData maximum MeltingT,Bond strength (comp),0.052800495178,0.032235946506,0.052800495178,-38.947643581960,100 * (A_L2 - A_L1) / A_L1
+MagpieData maximum MendeleevNumber,Periodic position (comp),0.038020096719,0.033843219280,0.038020096719,-10.985972681405,100 * (A_L2 - A_L1) / A_L1
+MagpieData maximum NUnfilled,Unfilled orbitals (comp),0.032593958080,0.024045908824,0.032593958080,-26.225870559425,100 * (A_L2 - A_L1) / A_L1
+MagpieData maximum NValence,Valence total (comp),0.074272580445,0.051696073264,0.074272580445,-30.396826185007,100 * (A_L2 - A_L1) / A_L1
+MagpieData maximum NdUnfilled,Unfilled orbitals (comp),0.021593401209,0.016105042771,0.021593401209,-25.416831674713,100 * (A_L2 - A_L1) / A_L1
+MagpieData maximum NdValence,d/p electron count (comp),0.107218578458,0.102730594575,0.107218578458,-4.185826698115,100 * (A_L2 - A_L1) / A_L1
+MagpieData maximum NfUnfilled,Unfilled orbitals (comp),0.037557672709,0.024757282808,0.037557672709,-34.081957100763,100 * (A_L2 - A_L1) / A_L1
+MagpieData maximum NfValence,d/p electron count (comp),0.015608986840,0.005204578396,0.015608986840,-66.656526465180,100 * (A_L2 - A_L1) / A_L1
+MagpieData maximum NpUnfilled,Unfilled orbitals (comp),0.014332336374,0.017811279744,0.014332336374,24.273386275557,100 * (A_L2 - A_L1) / A_L1
+MagpieData maximum NpValence,d/p electron count (comp),0.004125019070,0.012103336863,0.004125019070,193.412870547551,100 * (A_L2 - A_L1) / A_L1
+MagpieData maximum NsUnfilled,Unfilled orbitals (comp),0.001421156572,0.000397059048,0.001421156572,-72.060851309368,100 * (A_L2 - A_L1) / A_L1
+MagpieData maximum NsValence,d/p electron count (comp),0.000001540083,0.000005305873,0.000001540083,244.518542758367,100 * (A_L2 - A_L1) / A_L1
+MagpieData maximum Number,Periodic position (comp),0.035885445774,0.017845595255,0.035885445774,-50.270660233453,100 * (A_L2 - A_L1) / A_L1
+MagpieData maximum Row,Atomic size (comp),0.000161732256,0.000147862636,0.000161732256,-8.575666924236,100 * (A_L2 - A_L1) / A_L1
+MagpieData maximum SpaceGroupNumber,Periodic position (comp),0.004426194355,0.001754885539,0.004426194355,-60.352271077455,100 * (A_L2 - A_L1) / A_L1
+MagpieData mean AtomicWeight,Atomic size (comp),0.027658980340,0.011795116588,0.027658980340,-57.355200938064,100 * (A_L2 - A_L1) / A_L1
+MagpieData mean Column,Periodic position (comp),0.064303472638,0.027498612180,0.064303472638,-57.236194170879,100 * (A_L2 - A_L1) / A_L1
+MagpieData mean CovalentRadius,Atomic size (comp),0.070522964001,0.032705999911,0.070522964001,-53.623616967509,100 * (A_L2 - A_L1) / A_L1
+MagpieData mean Electronegativity,Ionicity,0.071990422904,0.022179555148,0.071990422904,-69.190964224072,100 * (A_L2 - A_L1) / A_L1
+MagpieData mean GSbandgap,Band-gap prior (comp),0.129129543900,0.034609876573,0.129129543900,-73.197553768364,100 * (A_L2 - A_L1) / A_L1
+MagpieData mean GSmagmom,Magnetic moment (comp),0.017243431881,0.016461240128,0.017243431881,-4.536172142427,100 * (A_L2 - A_L1) / A_L1
+MagpieData mean GSvolume_pa,Atomic size (comp),0.056833721697,0.027878755704,0.056833721697,-50.946806102128,100 * (A_L2 - A_L1) / A_L1
+MagpieData mean MeltingT,Bond strength (comp),0.059760082513,0.033215403557,0.059760082513,-44.418745490276,100 * (A_L2 - A_L1) / A_L1
+MagpieData mean MendeleevNumber,Periodic position (comp),0.070251539350,0.016621576622,0.070251539350,-76.339911159209,100 * (A_L2 - A_L1) / A_L1
+MagpieData mean NUnfilled,Unfilled orbitals (comp),0.035852368921,0.014914661646,0.035852368921,-58.399787532210,100 * (A_L2 - A_L1) / A_L1
+MagpieData mean NValence,Valence total (comp),0.046381916851,0.013652841561,0.046381916851,-70.564300728538,100 * (A_L2 - A_L1) / A_L1
+MagpieData mean NdUnfilled,Unfilled orbitals (comp),0.018526222557,0.007416845765,0.018526222557,-59.965687866409,100 * (A_L2 - A_L1) / A_L1
+MagpieData mean NdValence,d/p electron count (comp),0.173004001379,0.149673596025,0.173004001379,-13.485471531602,100 * (A_L2 - A_L1) / A_L1
+MagpieData mean NfUnfilled,Unfilled orbitals (comp),0.006712994538,0.003802604275,0.006712994538,-43.354575172693,100 * (A_L2 - A_L1) / A_L1
+MagpieData mean NfValence,d/p electron count (comp),0.004977053963,0.001832733280,0.004977053963,-63.176342997688,100 * (A_L2 - A_L1) / A_L1
+MagpieData mean NpUnfilled,Unfilled orbitals (comp),0.033977814019,0.016137989238,0.033977814019,-52.504333477691,100 * (A_L2 - A_L1) / A_L1
+MagpieData mean NpValence,d/p electron count (comp),0.071849733591,0.077139019966,0.071849733591,7.361594971456,100 * (A_L2 - A_L1) / A_L1
+MagpieData mean NsUnfilled,Unfilled orbitals (comp),0.014434002340,0.004904284142,0.014434002340,-66.022700935684,100 * (A_L2 - A_L1) / A_L1
+MagpieData mean NsValence,d/p electron count (comp),0.045777261257,0.022384440526,0.045777261257,-51.101398572945,100 * (A_L2 - A_L1) / A_L1
+MagpieData mean Number,Periodic position (comp),0.030782435089,0.008356750011,0.030782435089,-72.852212675223,100 * (A_L2 - A_L1) / A_L1
+MagpieData mean Row,Atomic size (comp),0.065828733146,0.035744234920,0.065828733146,-45.701165416372,100 * (A_L2 - A_L1) / A_L1
+MagpieData mean SpaceGroupNumber,Periodic position (comp),0.037547569722,0.024128613994,0.037547569722,-35.738546669697,100 * (A_L2 - A_L1) / A_L1
+MagpieData minimum AtomicWeight,Atomic size (comp),0.002535423031,0.001534178737,0.002535423031,-39.490226371885,100 * (A_L2 - A_L1) / A_L1
+MagpieData minimum Column,Periodic position (comp),0.006962242536,0.002774027176,0.006962242536,-60.156125533415,100 * (A_L2 - A_L1) / A_L1
+MagpieData minimum CovalentRadius,Atomic size (comp),0.002622723114,0.006294394843,0.002622723114,139.994638026865,100 * (A_L2 - A_L1) / A_L1
+MagpieData minimum Electronegativity,Ionicity,0.012393743731,0.006617600564,0.012393743731,-46.605313878504,100 * (A_L2 - A_L1) / A_L1
+MagpieData minimum GSbandgap,Band-gap prior (comp),0.001650837017,0.000419192889,0.001650837017,-74.607251662873,100 * (A_L2 - A_L1) / A_L1
+MagpieData minimum GSmagmom,Magnetic moment (comp),0.000000000000,0.000000000000,0.000000000000,NA,100 * (A_L2 - A_L1) / A_L1
+MagpieData minimum GSvolume_pa,Atomic size (comp),0.010118603706,0.008596983738,0.010118603706,-15.037845262780,100 * (A_L2 - A_L1) / A_L1
+MagpieData minimum MeltingT,Bond strength (comp),0.021019425243,0.031963277608,0.021019425243,52.065421572785,100 * (A_L2 - A_L1) / A_L1
+MagpieData minimum MendeleevNumber,Periodic position (comp),0.016394412145,0.007758910302,0.016394412145,-52.673446089799,100 * (A_L2 - A_L1) / A_L1
+MagpieData minimum NUnfilled,Unfilled orbitals (comp),0.011697093025,0.007377953269,0.011697093025,-36.924898751224,100 * (A_L2 - A_L1) / A_L1
+MagpieData minimum NValence,Valence total (comp),0.011275717989,0.011398887262,0.011275717989,1.092340844835,100 * (A_L2 - A_L1) / A_L1
+MagpieData minimum NdUnfilled,Unfilled orbitals (comp),0.000000072346,0.000000000000,0.000000072346,-100.000000000000,100 * (A_L2 - A_L1) / A_L1
+MagpieData minimum NdValence,d/p electron count (comp),0.000079941914,0.000160677970,0.000079941914,100.993398368801,100 * (A_L2 - A_L1) / A_L1
+MagpieData minimum NfUnfilled,Unfilled orbitals (comp),0.000000000000,0.000000000000,0.000000000000,NA,100 * (A_L2 - A_L1) / A_L1
+MagpieData minimum NfValence,d/p electron count (comp),0.000000000000,0.000000000000,0.000000000000,NA,100 * (A_L2 - A_L1) / A_L1
+MagpieData minimum NpUnfilled,Unfilled orbitals (comp),0.000777541019,0.000140766846,0.000777541019,-81.895894558885,100 * (A_L2 - A_L1) / A_L1
+MagpieData minimum NpValence,d/p electron count (comp),0.000310958188,0.000057238089,0.000310958188,-81.592995216783,100 * (A_L2 - A_L1) / A_L1
+MagpieData minimum NsUnfilled,Unfilled orbitals (comp),0.000000564985,0.000005275134,0.000000564985,833.676253935503,100 * (A_L2 - A_L1) / A_L1
+MagpieData minimum NsValence,d/p electron count (comp),0.013924622908,0.004267744254,0.013924622908,-69.351096381956,100 * (A_L2 - A_L1) / A_L1
+MagpieData minimum Number,Periodic position (comp),0.018017742783,0.005799443461,0.018017742783,-67.812597111070,100 * (A_L2 - A_L1) / A_L1
+MagpieData minimum Row,Atomic size (comp),0.000002633871,0.000008210349,0.000002633871,211.721729353737,100 * (A_L2 - A_L1) / A_L1
+MagpieData minimum SpaceGroupNumber,Periodic position (comp),0.009706476703,0.004690015689,0.009706476703,-51.681585070402,100 * (A_L2 - A_L1) / A_L1
+MagpieData mode AtomicWeight,Atomic size (comp),0.000505442964,0.000328521070,0.000505442964,-35.003335082255,100 * (A_L2 - A_L1) / A_L1
+MagpieData mode Column,Periodic position (comp),0.001738264575,0.001602460630,0.001738264575,-7.812616468761,100 * (A_L2 - A_L1) / A_L1
+MagpieData mode CovalentRadius,Atomic size (comp),0.004569256213,0.003595660906,0.004569256213,-21.307522734237,100 * (A_L2 - A_L1) / A_L1
+MagpieData mode Electronegativity,Ionicity,0.011504950002,0.014715775847,0.011504950002,27.908212074688,100 * (A_L2 - A_L1) / A_L1
+MagpieData mode GSbandgap,Band-gap prior (comp),0.003150945995,0.001412555692,0.003150945995,-55.170425198456,100 * (A_L2 - A_L1) / A_L1
+MagpieData mode GSmagmom,Magnetic moment (comp),0.000000000000,0.000000959364,0.000000000000,NA,100 * (A_L2 - A_L1) / A_L1
+MagpieData mode GSvolume_pa,Atomic size (comp),0.002821386559,0.002668554895,0.002821386559,-5.416899142193,100 * (A_L2 - A_L1) / A_L1
+MagpieData mode MeltingT,Bond strength (comp),0.258970469236,0.245020434260,0.258970469236,-5.386728076425,100 * (A_L2 - A_L1) / A_L1
+MagpieData mode MendeleevNumber,Periodic position (comp),0.010385489091,0.007596667856,0.010385489091,-26.853056324920,100 * (A_L2 - A_L1) / A_L1
+MagpieData mode NUnfilled,Unfilled orbitals (comp),0.000827785698,0.000516500382,0.000827785698,-37.604577656676,100 * (A_L2 - A_L1) / A_L1
+MagpieData mode NValence,Valence total (comp),0.001529582194,0.000560144894,0.001529582194,-63.379222378305,100 * (A_L2 - A_L1) / A_L1
+MagpieData mode NdUnfilled,Unfilled orbitals (comp),0.000002494008,0.000000369515,0.000002494008,-85.183889207217,100 * (A_L2 - A_L1) / A_L1
+MagpieData mode NdValence,d/p electron count (comp),0.000265550101,0.000041442232,0.000265550101,-84.393818022163,100 * (A_L2 - A_L1) / A_L1
+MagpieData mode NfUnfilled,Unfilled orbitals (comp),0.000031607837,0.000009932529,0.000031607837,-68.575739707763,100 * (A_L2 - A_L1) / A_L1
+MagpieData mode NfValence,d/p electron count (comp),0.000024204293,0.000009510552,0.000024204293,-60.707171281058,100 * (A_L2 - A_L1) / A_L1
+MagpieData mode NpUnfilled,Unfilled orbitals (comp),0.001704970025,0.000769252656,0.001704970025,-54.881748972608,100 * (A_L2 - A_L1) / A_L1
+MagpieData mode NpValence,d/p electron count (comp),0.000535680738,0.000492627558,0.000535680738,-8.037096901257,100 * (A_L2 - A_L1) / A_L1
+MagpieData mode NsUnfilled,Unfilled orbitals (comp),0.000042370808,0.000014759357,0.000042370808,-65.166212192724,100 * (A_L2 - A_L1) / A_L1
+MagpieData mode NsValence,d/p electron count (comp),0.000374931085,0.000087606204,0.000374931085,-76.634051577120,100 * (A_L2 - A_L1) / A_L1
+MagpieData mode Number,Periodic position (comp),0.002231846098,0.001196169760,0.002231846098,-46.404469321300,100 * (A_L2 - A_L1) / A_L1
+MagpieData mode Row,Atomic size (comp),0.000024259347,0.000013650060,0.000024259347,-43.732779213955,100 * (A_L2 - A_L1) / A_L1
+MagpieData mode SpaceGroupNumber,Periodic position (comp),0.006669475697,0.001385130221,0.006669475697,-79.231797461213,100 * (A_L2 - A_L1) / A_L1
+MagpieData range AtomicWeight,Atomic size (comp),0.020778799430,0.009433922358,0.020778799430,-54.598328022516,100 * (A_L2 - A_L1) / A_L1
+MagpieData range Column,Periodic position (comp),0.046972174197,0.037230927497,0.046972174197,-20.738334698628,100 * (A_L2 - A_L1) / A_L1
+MagpieData range CovalentRadius,Atomic size (comp),0.024210903794,0.017431560904,0.024210903794,-28.001197095274,100 * (A_L2 - A_L1) / A_L1
+MagpieData range Electronegativity,Ionicity,0.025934660807,0.034708753228,0.025934660807,33.831529496936,100 * (A_L2 - A_L1) / A_L1
+MagpieData range GSbandgap,Band-gap prior (comp),0.013409835286,0.006815209985,0.013409835286,-49.177526500481,100 * (A_L2 - A_L1) / A_L1
+MagpieData range GSmagmom,Magnetic moment (comp),0.020610127598,0.009177635424,0.020610127598,-55.470263926417,100 * (A_L2 - A_L1) / A_L1
+MagpieData range GSvolume_pa,Atomic size (comp),0.014158780687,0.006924201734,0.014158780687,-51.096059133552,100 * (A_L2 - A_L1) / A_L1
+MagpieData range MeltingT,Bond strength (comp),0.034047607332,0.030008068308,0.034047607332,-11.864384433210,100 * (A_L2 - A_L1) / A_L1
+MagpieData range MendeleevNumber,Periodic position (comp),0.015943845734,0.013732676394,0.015943845734,-13.868481774138,100 * (A_L2 - A_L1) / A_L1
+MagpieData range NUnfilled,Unfilled orbitals (comp),0.018575590104,0.015188728459,0.018575590104,-18.232861652027,100 * (A_L2 - A_L1) / A_L1
+MagpieData range NValence,Valence total (comp),0.020839601755,0.011159216985,0.020839601755,-46.451870260175,100 * (A_L2 - A_L1) / A_L1
+MagpieData range NdUnfilled,Unfilled orbitals (comp),0.005485573784,0.004655311815,0.005485573784,-15.135371445937,100 * (A_L2 - A_L1) / A_L1
+MagpieData range NdValence,d/p electron count (comp),0.022012608126,0.012479808182,0.022012608126,-43.306090263362,100 * (A_L2 - A_L1) / A_L1
+MagpieData range NfUnfilled,Unfilled orbitals (comp),0.014886659570,0.004753693938,0.014886659570,-68.067423615820,100 * (A_L2 - A_L1) / A_L1
+MagpieData range NfValence,d/p electron count (comp),0.012533468194,0.004571580328,0.012533468194,-63.525017519698,100 * (A_L2 - A_L1) / A_L1
+MagpieData range NpUnfilled,Unfilled orbitals (comp),0.004144196399,0.004500756972,0.004144196399,8.603853164538,100 * (A_L2 - A_L1) / A_L1
+MagpieData range NpValence,d/p electron count (comp),0.002660195343,0.001582194120,0.002660195343,-40.523385858170,100 * (A_L2 - A_L1) / A_L1
+MagpieData range NsUnfilled,Unfilled orbitals (comp),0.000919673941,0.000220417132,0.000919673941,-76.033121901321,100 * (A_L2 - A_L1) / A_L1
+MagpieData range NsValence,d/p electron count (comp),0.011876794510,0.007689594291,0.011876794510,-35.255305756602,100 * (A_L2 - A_L1) / A_L1
+MagpieData range Number,Periodic position (comp),0.014138525352,0.008433772251,0.014138525352,-40.348996510536,100 * (A_L2 - A_L1) / A_L1
+MagpieData range Row,Atomic size (comp),0.001733535901,0.000892440905,0.001733535901,-48.519041082643,100 * (A_L2 - A_L1) / A_L1
+MagpieData range SpaceGroupNumber,Periodic position (comp),0.011232261546,0.009295688011,0.011232261546,-17.241172022932,100 * (A_L2 - A_L1) / A_L1

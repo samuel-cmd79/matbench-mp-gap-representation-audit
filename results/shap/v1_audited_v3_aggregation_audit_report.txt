@@ -24,13 +24,13 @@ Deletion ablation is an L2-only analysis; all L1 Deletion ΔMAE values are NA.
 
 L1 reference checks
 -------------------
-                Feature group                    metric  reference  calculated  absolute difference  absolute tolerance   status                     scope
-All mutually exclusive groups Group SHAP shares sum (%)      100.0   99.999992             0.000008            0.000005 NO MATCH L1 composition-only audit
-         BandCenter (L2 only)                 n columns        0.0    0.000000             0.000000            0.000000    MATCH L1 composition-only audit
-                     Ionicity                 n columns        6.0    6.000000             0.000000            0.000000    MATCH L1 composition-only audit
+                Feature group                    metric  reference  calculated  absolute difference  absolute tolerance status                     scope
+All mutually exclusive groups Group SHAP shares sum (%)      100.0   99.999992             0.000008             0.00001  MATCH L1 composition-only audit
+         BandCenter (L2 only)                 n columns        0.0    0.000000             0.000000             0.00000  MATCH L1 composition-only audit
+                     Ionicity                 n columns        6.0    6.000000             0.000000             0.00000  MATCH L1 composition-only audit
 
 L1 structural-total check
 -------------------------
                                              aggregation method                     scope  calculated structural total (%)  reference L1 structural total (%)  absolute difference  absolute tolerance  n columns  reference n columns  BandCenter included status
-normalize within each fold, then average the five folds equally L1 composition-only audit                              0.0                                0.0                  0.0            0.000005          0                    0                False  MATCH
+normalize within each fold, then average the five folds equally L1 composition-only audit                              0.0                                0.0                  0.0             0.00001          0                    0                False  MATCH
 Calculated structural columns: 0

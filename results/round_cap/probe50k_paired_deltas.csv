@@ -1,0 +1,11 @@
+config,fold,dMAE,dRMSE
+L2_no_coordination,0,-0.007795,-0.012794
+L2_no_coordination,1,-0.006605,-0.005552
+L2_no_coordination,2,-0.004638,-0.004204
+L2_no_coordination,3,-0.008188,-0.009501
+L2_no_coordination,4,-0.007748,-0.009208
+L2_no_symmetry,0,0.027007,0.058225
+L2_no_symmetry,1,0.026221,0.060602
+L2_no_symmetry,2,0.027749,0.068924
+L2_no_symmetry,3,0.026207,0.057570
+L2_no_symmetry,4,0.028686,0.070582

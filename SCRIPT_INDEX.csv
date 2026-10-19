@@ -17,17 +17,39 @@ train_ids_export.py,provenance-only,provenance,One-off export of official outer-
 mp_gap_ablation.py,release-ready,training,Symmetry and coordination-fingerprint deletion retraining,scripts/mp_gap_ablation.py
 mp_gap_replay_fold0_curve.py,release-ready,replay,Deterministic Level-2 fold-0 learning-curve replay,scripts/mp_gap_replay_fold0_curve.py
 mp_gap_replay_v2_allfold_training_info.py,release-ready,replay,All-fold Level-2 training-information replay,scripts/mp_gap_replay_v2_allfold_training_info.py
-neg_and_family_analysis_v4.py,release-ready,analysis,Raw boundary distribution and chemical-family analysis,scripts/neg_and_family_analysis_v4.py
-polymorph_bound_fold_conditioned_v3.py,release-ready,analysis,Final fold-conditioned repeated-composition oracle,scripts/polymorph_bound_fold_conditioned_v3.py
+neg_and_family_analysis_v4.py,legacy-diagnostic,legacy-diagnostic,Superseded by neg_and_family_analysis_v5.py; retained for provenance. Previous role: Raw boundary distribution and chemical-family analysis,archive/legacy_diagnostic/neg_and_family_analysis_v4.py
+polymorph_bound_fold_conditioned_v3.py,legacy-diagnostic,legacy-diagnostic,Superseded by polymorph_bound_fold_conditioned_v4.py; retained for provenance. Previous role: Final fold-conditioned repeated-composition oracle,archive/legacy_diagnostic/polymorph_bound_fold_conditioned_v3.py
 r2_three_versions.py,release-ready,audit,Per-fold and pooled R-squared conventions,scripts/r2_three_versions.py
 raw_provenance_audit.py,release-ready,audit,Layered raw-prediction provenance audit,scripts/raw_provenance_audit.py
 finalize_repository_release.py,release-ready,release,Validate the public tree and generate deterministic release metadata,scripts/release/finalize_repository_release.py
 prepare_zenodo_data_release.py,release-ready,release,Validate and package the two external Zenodo data bundles,scripts/release/prepare_zenodo_data_release.py
-remake_shap_figs_english.py,release-ready,figures,English Level-2 XGBoost fold-0 SHAP renderer,scripts/remake_shap_figs_english.py
+remake_shap_figs_english.py,legacy-diagnostic,legacy-diagnostic,Superseded by remake_shap_figs_english_v2.py; retained for provenance. Previous role: English Level-2 XGBoost fold-0 SHAP renderer,archive/legacy_diagnostic/remake_shap_figs_english.py
 remake_shap_figs_english_v2.py,release-ready,figures,English Level-2 RF fold-0 SHAP renderer,scripts/remake_shap_figs_english_v2.py
-shap_crossfold_aggregate_audited_v3.py,release-ready,analysis,Final audited cross-fold SHAP aggregation,scripts/shap_crossfold_aggregate_audited_v3.py
-subset_robustness_check.py,release-ready,audit,Complete-versus-incomplete feature subset robustness analysis,scripts/subset_robustness_check.py
+shap_crossfold_aggregate_audited_v3.py,legacy-diagnostic,legacy-diagnostic,Superseded by shap_crossfold_aggregate_audited_v4.py; retained for provenance. Previous role: Final audited cross-fold SHAP aggregation,archive/legacy_diagnostic/shap_crossfold_aggregate_audited_v3.py
+subset_robustness_check.py,legacy-diagnostic,legacy-diagnostic,Superseded by subset_robustness_check_v2.py; retained for provenance. Previous role: Complete-versus-incomplete feature subset robustness analysis,archive/legacy_diagnostic/subset_robustness_check.py
 train_l1_plus_bandcenter.py,release-ready,training,Level-1 plus BandCenter control,scripts/train_l1_plus_bandcenter.py
 verify_deletion_per_fold.py,release-ready,audit,Per-fold verification of deletion-retraining responses,scripts/verify_deletion_per_fold.py
 xgb_training_summary_table.py,release-ready,replay,Frozen Level-1 XGBoost training summary table,scripts/xgb_training_summary_table.py
 xgb_training_summary_table_v2_replay.py,release-ready,replay,Level-2 XGBoost replay summary table,scripts/xgb_training_summary_table_v2_replay.py
+mp_gap_baseline_v1_run0709_replay.ipynb,release-ready,replay,Deterministic replay of the frozen Level-1 notebook with pre-clip prediction export,notebooks/mp_gap_baseline_v1_run0709_replay.ipynb
+mp_gap_baseline_v2_run0709_replay.ipynb,release-ready,replay,Deterministic replay of the frozen Level-2 XGBoost notebook with pre-clip prediction and training-information export,notebooks/mp_gap_baseline_v2_run0709_replay.ipynb
+mp_gap_baseline_v1_run0709_101.ipynb,release-ready,training,Level-1 XGBoost multi-seed run (seed 101),notebooks/mp_gap_baseline_v1_run0709_101.ipynb
+mp_gap_baseline_v1_run0709_202.ipynb,release-ready,training,Level-1 XGBoost multi-seed run (seed 202),notebooks/mp_gap_baseline_v1_run0709_202.ipynb
+mp_gap_baseline_v2_run0709_replay_101.ipynb,release-ready,training,Level-2 XGBoost multi-seed run (seed 101),notebooks/mp_gap_baseline_v2_run0709_replay_101.ipynb
+mp_gap_baseline_v2_run0709_replay_202.ipynb,release-ready,training,Level-2 XGBoost multi-seed run (seed 202),notebooks/mp_gap_baseline_v2_run0709_replay_202.ipynb
+mp_gap_baseline_v1_run0709_50k.ipynb,release-ready,training,"Level-1 XGBoost round-cap sensitivity run (cap of 100,000 boosting rounds despite the 50k/50000 suffix)",notebooks/mp_gap_baseline_v1_run0709_50k.ipynb
+mp_gap_baseline_v2_run0709_replay_50k.ipynb,release-ready,training,"Level-2 XGBoost round-cap sensitivity run (cap of 100,000 boosting rounds despite the 50k/50000 suffix)",notebooks/mp_gap_baseline_v2_run0709_replay_50k.ipynb
+mp_gap_v1_groupcv.ipynb,release-ready,training,Level-1 XGBoost five-fold cross-validation grouped by reduced formula,notebooks/mp_gap_v1_groupcv.ipynb
+mp_gap_v2_groupcv.ipynb,release-ready,training,Level-2 XGBoost five-fold cross-validation grouped by reduced formula,notebooks/mp_gap_v2_groupcv.ipynb
+make_group_splits.py,release-ready,evaluation,"Formula-grouped outer and inner splits shared by Level-1 and Level-2, with split audit",scripts/make_group_splits.py
+summarize_groupcv.py,release-ready,analysis,Per-entry grouped and official-fold prediction tables with provenance and consistency checks,scripts/summarize_groupcv.py
+collect_fold_metrics.py,release-ready,analysis,"Per-configuration, per-seed, per-fold MAE, RMSE and best iteration with paired deletion differences",scripts/collect_fold_metrics.py
+collect_probe100k.py,release-ready,analysis,"Round-cap sensitivity summary at a 100,000-round cap",scripts/collect_probe100k.py
+L2_raw_MAE.py,release-ready,analysis,"Level-2 zero-gap raw-prediction median, IQR, raw MAE and clipping gain",scripts/L2_raw_MAE.py
+mp_gap_ablation_101.py,release-ready,training,Symmetry and coordination-fingerprint deletion retraining (seed 101),scripts/mp_gap_ablation_101.py
+mp_gap_ablation_202.py,release-ready,training,Symmetry and coordination-fingerprint deletion retraining (seed 202),scripts/mp_gap_ablation_202.py
+mp_gap_ablation_50000.py,release-ready,training,"Symmetry and coordination-fingerprint deletion retraining for the round-cap sensitivity analysis (cap of 100,000 boosting rounds despite the 50k/50000 suffix)",scripts/mp_gap_ablation_50000.py
+neg_and_family_analysis_v5.py,release-ready,analysis,"Raw boundary distribution from replayed Level-1 and Level-2 raw predictions, and chemical-family analysis",scripts/neg_and_family_analysis_v5.py
+subset_robustness_check_v2.py,release-ready,audit,Level-1 versus Level-2 error on complete and at-least-one-failure feature subsets,scripts/subset_robustness_check_v2.py
+polymorph_bound_fold_conditioned_v4.py,release-ready,analysis,Final fold-conditioned repeated-composition oracle,scripts/polymorph_bound_fold_conditioned_v4.py
+shap_crossfold_aggregate_audited_v4.py,release-ready,analysis,Final audited cross-fold SHAP aggregation,scripts/shap_crossfold_aggregate_audited_v4.py

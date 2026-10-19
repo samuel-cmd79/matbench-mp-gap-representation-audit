@@ -1,0 +1,2 @@
+The four major structural groups together account for 46.2% of the total SHAP attribution, while Dimensionality and Other structure contribute a further 0.3%, giving a complete structural total of 46.5%.
+四个主要结构组合计 46.2%，Dimensionality 和 Other structure 再贡献约 0.3%，因此完整结构总量为 46.5%。
