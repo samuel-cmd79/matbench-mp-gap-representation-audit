@@ -53,3 +53,4 @@ neg_and_family_analysis_v5.py,release-ready,analysis,"Raw boundary distribution 
 subset_robustness_check_v2.py,release-ready,audit,Level-1 versus Level-2 error on complete and at-least-one-failure feature subsets,scripts/subset_robustness_check_v2.py
 polymorph_bound_fold_conditioned_v4.py,release-ready,analysis,Final fold-conditioned repeated-composition oracle,scripts/polymorph_bound_fold_conditioned_v4.py
 shap_crossfold_aggregate_audited_v4.py,release-ready,analysis,Final audited cross-fold SHAP aggregation,scripts/shap_crossfold_aggregate_audited_v4.py
+prepare_zenodo_data_update_v1_1_0.py,release-ready,release,Package the v1.1.0 Zenodo data update (Level-1 feature cache) and merge v1.0.0 record files,scripts/release/prepare_zenodo_data_update_v1_1_0.py

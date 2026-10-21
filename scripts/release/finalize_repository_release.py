@@ -37,7 +37,7 @@ SHA256_PATH = "SHA256SUMS.txt"
 SCRIPT_INDEX_PATH = "SCRIPT_INDEX.csv"
 LARGE_SHA256_PATH = "LARGE_DATA_SHA256SUMS.txt"
 FINALIZER_PATH = "scripts/release/finalize_repository_release.py"
-DATA_DOI = "10.5281/zenodo.22038572"
+DATA_DOI = "10.5281/zenodo.23482983"
 
 REQUIRED_GITIGNORE_LINES = {
     "/_release_work/",
@@ -90,6 +90,8 @@ EXPECTED_LARGE_SHA256 = (
     "  mp_gap_gnn_export_v1.0.0.tar.gz\n"
     "1dea7d2dc99529e75046e6a402783bb935ad889ac8df8715afb318589a238d9b"
     "  mp_gap_matbench_cache_v1.0.0.tar.gz\n"
+    "21be7b576c9f602c914733a871ab91efdadf1a2ffce1201c51ec98d3d77506af"
+    "  mp_gap_v1_features_cache_v1.1.0.tar.gz\n"
 )
 
 README_PLACEHOLDERS = (
@@ -503,7 +505,7 @@ def validate_large_checksums(root: Path) -> List[str]:
     if actual != EXPECTED_LARGE_SHA256:
         return [
             LARGE_SHA256_PATH
-            + " must contain exactly the two approved v1.0.0 archive hashes"
+            + " must contain exactly the approved archive hashes"
         ]
     return []
 
