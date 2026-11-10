@@ -54,3 +54,5 @@ subset_robustness_check_v2.py,release-ready,audit,Level-1 versus Level-2 error o
 polymorph_bound_fold_conditioned_v4.py,release-ready,analysis,Final fold-conditioned repeated-composition oracle,scripts/polymorph_bound_fold_conditioned_v4.py
 shap_crossfold_aggregate_audited_v4.py,release-ready,analysis,Final audited cross-fold SHAP aggregation,scripts/shap_crossfold_aggregate_audited_v4.py
 prepare_zenodo_data_update_v1_1_0.py,release-ready,release,Package the v1.1.0 Zenodo data update (Level-1 feature cache) and merge v1.0.0 record files,scripts/release/prepare_zenodo_data_update_v1_1_0.py
+mp_gap_v2_export_matrices.ipynb,release-ready,replay,"Exports the exact Level-2 matrices passed to XGBoost, read from the frozen cache, as input for the top-k SHAP deletion test",notebooks/mp_gap_v2_export_matrices.ipynb
+topk_shap_deletion.py,release-ready,analysis,Top-k SHAP deletion test with random-k controls for Level 2 (AI4Mat camera-ready Table 3 and Table 9),scripts/topk_shap_deletion.py

@@ -1,0 +1,284 @@
+column,mean_abs_shap,in_pool,rank_in_pool
+n_symmetry_ops,0.28043228,True,1.0
+MagpieData mode MeltingT,0.2526382,False,
+MagpieData mean NdValence,0.15034099,False,
+spacegroup_num,0.12645826,True,2.0
+MagpieData maximum NdValence,0.102544546,False,
+MagpieData maximum Electronegativity,0.09520707,False,
+MagpieData mean NpValence,0.07782956,False,
+mean octahedral CN_6,0.07480358,True,3.0
+min relative bond length,0.0555199,True,4.0
+MagpieData avg_dev Electronegativity,0.052103546,False,
+MagpieData maximum NValence,0.04606115,False,
+MagpieData mean Row,0.046029575,False,
+mean wt CN_1,0.045623586,True,5.0
+mean tetrahedral CN_4,0.044399682,True,6.0
+mean trigonal non-coplanar CN_3,0.041981928,True,7.0
+MagpieData range Column,0.040996328,False,
+MagpieData avg_dev Column,0.040180523,False,
+std_dev square co-planar CN_4,0.040091988,True,8.0
+MagpieData maximum MendeleevNumber,0.039727107,False,
+mean wt CN_6,0.038973205,True,9.0
+MagpieData mean GSbandgap,0.03877067,False,
+MagpieData range Electronegativity,0.038220797,False,
+MagpieData mean CovalentRadius,0.037431262,False,
+std_dev octahedral CN_6,0.036693867,True,10.0
+MagpieData mean MeltingT,0.03485081,False,
+density,0.034787897,True,11.0
+is_centrosymmetric,0.03424589,True,12.0
+MagpieData range MeltingT,0.03421731,False,
+MagpieData mean Column,0.029893918,False,
+MagpieData maximum MeltingT,0.029449409,False,
+MagpieData minimum MeltingT,0.02908264,False,
+mean neighbor distance variation,0.029076166,True,13.0
+MagpieData mean GSvolume_pa,0.029053096,False,
+mean ordering parameter shell 2,0.028794399,True,14.0
+std_dev wt CN_1,0.02574642,True,15.0
+std_dev square pyramidal CN_5,0.02460356,True,16.0
+mean ordering parameter shell 1,0.02436991,True,17.0
+MagpieData avg_dev GSbandgap,0.024283195,False,
+MagpieData mean Electronegativity,0.024107246,False,
+MagpieData maximum NUnfilled,0.024070693,False,
+std_dev tetrahedral CN_4,0.024043439,True,18.0
+vpa,0.023837911,True,19.0
+mean bent 120 degrees CN_2,0.023598826,True,20.0
+MagpieData maximum NfUnfilled,0.023376752,False,
+MagpieData mean SpaceGroupNumber,0.022900824,False,
+max relative bond length,0.022614485,True,21.0
+MagpieData avg_dev GSvolume_pa,0.022578713,False,
+MagpieData mean MendeleevNumber,0.021922952,False,
+packing fraction,0.021827238,True,22.0
+band center,0.021716934,False,
+avg_dev neighbor distance variation,0.021148322,True,23.0
+MagpieData mean NsValence,0.020876162,False,
+MagpieData avg_dev NUnfilled,0.020489419,False,
+mean trigonal pyramidal CN_4,0.019970125,True,24.0
+MagpieData mean GSmagmom,0.019966288,False,
+MagpieData avg_dev SpaceGroupNumber,0.019435171,False,
+std_dev body-centered cubic CN_8,0.019222815,True,25.0
+MagpieData avg_dev NpUnfilled,0.017962692,False,
+MagpieData maximum NpUnfilled,0.017502425,False,
+mean water-like CN_2,0.017272152,True,26.0
+MagpieData range CovalentRadius,0.016925907,False,
+std_dev bent 120 degrees CN_2,0.016708825,True,27.0
+MagpieData maximum NdUnfilled,0.016689286,False,
+std_dev trigonal planar CN_3,0.016677791,True,28.0
+MagpieData mean NpUnfilled,0.01644048,False,
+MagpieData mean NUnfilled,0.016393034,False,
+MagpieData maximum Number,0.016023178,False,
+mean pentagonal planar CN_5,0.01599471,True,29.0
+MagpieData mode Electronegativity,0.015906429,False,
+MagpieData avg_dev NValence,0.015763585,False,
+MagpieData range NdValence,0.015523388,False,
+mean absolute deviation in relative bond length,0.015483096,True,30.0
+MagpieData range NUnfilled,0.015279628,False,
+std_dev L-shaped CN_2,0.015227848,True,31.0
+MagpieData avg_dev NsValence,0.015169774,False,
+MagpieData mean NValence,0.014869123,False,
+MagpieData maximum GSvolume_pa,0.0148491515,False,
+MagpieData maximum CovalentRadius,0.014756889,False,
+std_dev wt CN_4,0.014525138,True,32.0
+MagpieData range NValence,0.013965421,False,
+MagpieData avg_dev CovalentRadius,0.013669245,False,
+mean wt CN_3,0.013636157,True,33.0
+MagpieData range MendeleevNumber,0.0135599505,False,
+std_dev trigonal pyramidal CN_4,0.01300903,True,34.0
+MagpieData avg_dev NpValence,0.012864966,False,
+std_dev trigonal non-coplanar CN_3,0.012353163,True,35.0
+mean linear CN_2,0.0122257145,True,36.0
+MagpieData avg_dev NdValence,0.012103292,False,
+maximum neighbor distance variation,0.012056881,True,37.0
+std_dev pentagonal pyramidal CN_6,0.011995032,True,38.0
+MagpieData range SpaceGroupNumber,0.011916991,False,
+std_dev rectangular see-saw-like CN_4,0.011744032,True,39.0
+crystal_system_trigonal,0.0117039755,True,40.0
+std_dev see-saw-like CN_4,0.011676002,True,41.0
+mean L-shaped CN_2,0.01148054,True,42.0
+mean bent 150 degrees CN_2,0.0114758415,True,43.0
+std_dev T-shaped CN_3,0.011460897,True,44.0
+range neighbor distance variation,0.011141376,True,45.0
+std_dev wt CN_3,0.011100098,True,46.0
+MagpieData maximum GSmagmom,0.010830186,False,
+mean square co-planar CN_4,0.010824399,True,47.0
+MagpieData mean AtomicWeight,0.010805753,False,
+mean hexagonal pyramidal CN_7,0.0106973415,True,48.0
+std_dev pentagonal bipyramidal CN_7,0.01038569,True,49.0
+std_dev wt CN_5,0.010207337,True,50.0
+MagpieData maximum NpValence,0.010095367,False,
+MagpieData range NsValence,0.009950926,False,
+MagpieData avg_dev GSmagmom,0.00987944,False,
+crystal_system_int,0.009814389,True,51.0
+MagpieData range GSmagmom,0.009774807,False,
+MagpieData avg_dev Row,0.009744812,False,
+mean rectangular see-saw-like CN_4,0.009578398,True,52.0
+std_dev hexagonal planar CN_6,0.009442913,True,53.0
+MagpieData avg_dev MeltingT,0.009414317,False,
+minimum neighbor distance variation,0.00914862,True,54.0
+MagpieData minimum MendeleevNumber,0.009145409,False,
+std_dev bent 150 degrees CN_2,0.009130635,True,55.0
+MagpieData minimum GSvolume_pa,0.009097357,False,
+mean pentagonal pyramidal CN_6,0.009026436,True,56.0
+mean T-shaped CN_3,0.00869465,True,57.0
+MagpieData maximum AtomicWeight,0.008609481,False,
+mean ordering parameter shell 3,0.00859417,True,58.0
+mean sgl_bd CN_1,0.008542777,True,59.0
+MagpieData range AtomicWeight,0.0084825875,False,
+MagpieData mean Number,0.008456515,False,
+MagpieData minimum NValence,0.0083382875,False,
+std_dev linear CN_2,0.0083258,True,60.0
+mean square pyramidal CN_5,0.008165487,True,61.0
+MagpieData minimum CovalentRadius,0.008081134,False,
+mean trigonal planar CN_3,0.007979025,True,62.0
+std_dev wt CN_7,0.007951493,True,63.0
+MagpieData range Number,0.007915196,False,
+std_dev wt CN_2,0.007895299,True,64.0
+MagpieData avg_dev NdUnfilled,0.007877459,False,
+MagpieData range GSvolume_pa,0.007730245,False,
+MagpieData minimum NUnfilled,0.007636107,False,
+std_dev water-like CN_2,0.0075764745,True,65.0
+std_dev hexagonal pyramidal CN_7,0.007539805,True,66.0
+mean see-saw-like CN_4,0.007409031,True,67.0
+mean wt CN_4,0.007305043,True,68.0
+MagpieData range GSbandgap,0.007178945,False,
+MagpieData maximum GSbandgap,0.0071045356,False,
+mean trigonal bipyramidal CN_5,0.0070946408,True,69.0
+MagpieData avg_dev MendeleevNumber,0.007005623,False,
+std_dev sgl_bd CN_1,0.0064965007,True,70.0
+mean body-centered cubic CN_8,0.0064706905,True,71.0
+MagpieData mean NdUnfilled,0.0064323354,False,
+std_dev wt CN_6,0.00638347,True,72.0
+std_dev q4 CN_10,0.0063777524,True,73.0
+MagpieData minimum Number,0.006339292,False,
+MagpieData maximum Column,0.0061591594,False,
+mean absolute deviation in relative cell size,0.0060527013,True,74.0
+std_dev wt CN_8,0.005844256,True,75.0
+std_dev hexagonal bipyramidal CN_8,0.0056618745,True,76.0
+MagpieData range NfUnfilled,0.005543413,False,
+mean wt CN_5,0.0054308604,True,77.0
+std_dev q2 CN_9,0.005353757,True,78.0
+MagpieData maximum NfValence,0.005341478,False,
+MagpieData avg_dev Number,0.0052978867,False,
+MagpieData minimum Electronegativity,0.005296562,False,
+mean hexagonal bipyramidal CN_8,0.0052666264,True,79.0
+MagpieData mode MendeleevNumber,0.0052378564,False,
+MagpieData minimum SpaceGroupNumber,0.005200737,False,
+std_dev trigonal bipyramidal CN_5,0.0049826936,True,80.0
+std_dev pentagonal planar CN_5,0.004929403,True,81.0
+mean wt CN_8,0.00488395,True,82.0
+mean wt CN_10,0.004731275,True,83.0
+MagpieData range NfValence,0.004608329,False,
+std_dev q2 CN_10,0.0045929966,True,84.0
+MagpieData mean NfUnfilled,0.0045270254,False,
+MagpieData range NpUnfilled,0.004453549,False,
+mean wt CN_2,0.0044484283,True,85.0
+MagpieData avg_dev AtomicWeight,0.004429347,False,
+mean hexagonal planar CN_6,0.004378654,True,86.0
+MagpieData avg_dev NsUnfilled,0.004193261,False,
+mean pentagonal bipyramidal CN_7,0.0040325676,True,87.0
+MagpieData minimum NsValence,0.0038582468,False,
+MagpieData mean NsUnfilled,0.0036558185,False,
+MagpieData range NdUnfilled,0.0036467717,False,
+MagpieData mode CovalentRadius,0.0035920744,False,
+std_dev q4 CN_12,0.003268489,True,88.0
+std_dev wt CN_10,0.003254357,True,89.0
+std_dev cuboctahedral CN_12,0.003222636,True,90.0
+std_dev q6 CN_12,0.0032058987,True,91.0
+std_dev q4 CN_9,0.003162745,True,92.0
+mean q4 CN_10,0.0031579908,True,93.0
+mean q4 CN_11,0.0031540692,True,94.0
+mean wt CN_11,0.0031403853,True,95.0
+crystal_system_tetragonal,0.0031305777,True,96.0
+mean wt CN_7,0.0029702324,True,97.0
+mean q6 CN_10,0.00285642,True,98.0
+mean q6 CN_11,0.0028048742,True,99.0
+std_dev q2 CN_12,0.0027995477,True,100.0
+mean cuboctahedral CN_12,0.002728905,True,101.0
+mean q2 CN_9,0.0027240748,True,102.0
+MagpieData avg_dev NfUnfilled,0.0027052402,False,
+dimensionality,0.002683989,True,103.0
+mean wt CN_12,0.0026668475,True,104.0
+mean wt CN_9,0.0024259405,True,105.0
+mean q6 CN_9,0.0023458914,True,106.0
+std_dev wt CN_9,0.0023400863,True,107.0
+MagpieData minimum Column,0.002334722,False,
+crystal_system_orthorhombic,0.0022096166,True,108.0
+mean q2 CN_10,0.0021352652,True,109.0
+std_dev wt CN_16,0.0021119441,True,110.0
+std_dev wt CN_13,0.0020872527,True,111.0
+MagpieData avg_dev NfValence,0.0020858813,False,
+std_dev q6 CN_9,0.0020521416,True,112.0
+std_dev q2 CN_11,0.0020440454,True,113.0
+MagpieData mean NfValence,0.0019740167,False,
+MagpieData mode GSbandgap,0.0019364451,False,
+std_dev wt CN_11,0.0019029708,True,114.0
+mean q4 CN_9,0.0018946943,True,115.0
+mean wt CN_14,0.0018588493,True,116.0
+mean q2 CN_12,0.0018326131,True,117.0
+std_dev q4 CN_11,0.0018096485,True,118.0
+MagpieData maximum SpaceGroupNumber,0.0017873083,False,
+std_dev q6 CN_10,0.0017841153,True,119.0
+mean wt CN_13,0.0017221508,True,120.0
+MagpieData mode GSvolume_pa,0.0016826505,False,
+mean q4 CN_12,0.0016404187,True,121.0
+MagpieData range NpValence,0.0016167773,False,
+std_dev wt CN_12,0.001604928,True,122.0
+std_dev wt CN_14,0.0015575956,True,123.0
+mean wt CN_16,0.001547441,True,124.0
+mean wt CN_15,0.0015391571,True,125.0
+MagpieData minimum AtomicWeight,0.0015321227,False,
+mean q6 CN_12,0.001515059,True,126.0
+std_dev q6 CN_11,0.0014724288,True,127.0
+mean q2 CN_11,0.0014683458,True,128.0
+MagpieData mode SpaceGroupNumber,0.0013257118,False,
+crystal_system_monoclinic,0.0012897182,True,129.0
+mean wt CN_18,0.0010889895,True,130.0
+std_dev wt CN_18,0.0010699283,True,131.0
+MagpieData mode Column,0.0010034085,False,
+std_dev wt CN_15,0.0009303112,True,132.0
+MagpieData mode NpValence,0.00085885683,False,
+MagpieData range Row,0.0008559021,False,
+MagpieData mode NValence,0.0008276242,False,
+MagpieData mode Number,0.00082154264,False,
+MagpieData maximum NsUnfilled,0.00065509044,False,
+MagpieData mode NpUnfilled,0.0006449989,False,
+mean wt CN_20,0.0005582221,True,133.0
+std_dev wt CN_17,0.00052684144,True,134.0
+mean wt CN_17,0.00052540225,True,135.0
+MagpieData mode NUnfilled,0.00037022916,False,
+MagpieData mode AtomicWeight,0.0003430831,False,
+MagpieData minimum GSbandgap,0.00031318064,False,
+crystal_system_hexagonal,0.00029106587,True,136.0
+std_dev wt CN_22,0.00028106855,True,137.0
+mean wt CN_19,0.00023609198,True,138.0
+crystal_system_triclinic,0.00023072686,True,139.0
+std_dev wt CN_24,0.00019440344,True,140.0
+MagpieData mode NsValence,0.00016086067,False,
+MagpieData minimum NpUnfilled,0.00015828964,False,
+MagpieData range NsUnfilled,0.00015658292,False,
+crystal_system_cubic,0.00015060599,True,141.0
+std_dev wt CN_20,0.00014002288,True,142.0
+mean wt CN_22,0.00013394393,True,143.0
+std_dev wt CN_19,0.00012788945,True,144.0
+mean wt CN_24,0.00011464421,True,145.0
+MagpieData minimum NdValence,0.00011132265,False,
+mean wt CN_21,0.00010608683,True,146.0
+MagpieData mode NdValence,7.5146185e-05,False,
+std_dev wt CN_21,6.538878e-05,True,147.0
+MagpieData minimum NpValence,3.565513e-05,False,
+MagpieData minimum Row,2.7160675e-05,False,
+std_dev wt CN_23,2.3360059e-05,True,148.0
+MagpieData maximum Row,1.9985317e-05,False,
+MagpieData maximum NsValence,1.8556319e-05,False,
+mean wt CN_23,1.3388894e-05,True,149.0
+MagpieData mode Row,7.6080405e-06,False,
+MagpieData minimum NsUnfilled,6.120716e-06,False,
+MagpieData mode NfUnfilled,0.0,False,
+MagpieData minimum NfUnfilled,0.0,False,
+MagpieData mode GSmagmom,0.0,False,
+MagpieData minimum NfValence,0.0,False,
+MagpieData minimum GSmagmom,0.0,False,
+MagpieData mode NfValence,0.0,False,
+MagpieData mode NsUnfilled,0.0,False,
+MagpieData minimum NdUnfilled,0.0,False,
+MagpieData mode NdUnfilled,0.0,False,
+crystal_system_nan,0.0,True,150.0

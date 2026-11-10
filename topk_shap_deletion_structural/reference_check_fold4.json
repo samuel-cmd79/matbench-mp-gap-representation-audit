@@ -1,0 +1,6 @@
+{
+ "reference": "pred_fold_4.npy",
+ "n": 21222,
+ "max_abs_diff": 0.0,
+ "tol": 0.0
+}

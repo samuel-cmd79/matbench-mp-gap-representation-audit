@@ -38,3 +38,4 @@ Thumbs.db
 # Model files and local caches from the round-cap and replay runs (not distributed via Git)
 *.ubj
 /outputs_v1_run0709/features_cache.pkl
+/topk_inputs/

@@ -1,0 +1,7 @@
+{
+ "pool": "structural",
+ "seed": 42,
+ "max_rounds": 8000,
+ "impute": "none",
+ "features_cache": "l2_matrices.pkl"
+}

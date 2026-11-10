@@ -1,6 +1,6 @@
 # What Structure Adds to Band-Gap Prediction, and What SHAP Does Not Tell Us
 
-Reproducibility companion to version 2 of the preprint (October 2026; public COE update pending). The DOI currently resolves to the earlier public version; the version-2 manuscript supersedes it. An earlier version of the preprint was titled *How Much Structure Does Band-Gap Prediction Need? A Fold-Controlled Representation–Learner Audit from Composition to Graphs on MatBench mp_gap*. A version of this work was accepted to the Findings, Tools and Open Challenges track of the AI4Mat-NeurIPS 2026 workshop.
+Reproducibility companion to the AI4Mat-NeurIPS 2026 workshop paper (Findings, Tools and Open Challenges track; camera-ready version) and to version 2 of the extended preprint (October 2026), which carries the full supplementary information. An earlier version of the preprint was titled *How Much Structure Does Band-Gap Prediction Need? A Fold-Controlled Representation–Learner Audit from Composition to Graphs on MatBench mp_gap*.
 
 The study compares three models with increasing access to crystal structure on the 106,113-entry MatBench `mp_gap` task, all scored on the official MatBench test folds:
 
@@ -8,11 +8,11 @@ The study compares three models with increasing access to crystal structure on t
 2. **Level 2 — composition plus engineered structural descriptors:** 283 columns with XGBoost;
 3. **Level 3 — atomistic graph:** ALIGNN, whose line graph encodes bond angles explicitly.
 
-> **Version note.** This release (v1.1.0) contains the code and outputs behind preprint version 2. Relative to v1.0.0 it adds the deterministic replay of the frozen Level-1 and Level-2 runs with pre-clip (raw) predictions, two further random seeds (101 and 202), the boosting-round cap sensitivity runs, and formula-grouped cross-validation, together with the scripts that summarize them; see [Preprint version 2 robustness analyses](#preprint-version-2-robustness-analyses). The external data record moves to version v1.1.0, which adds the frozen Level-1 feature cache. Where this README and preprint version 2 differ, the preprint takes precedence.
+> **Version note.** This release (v1.2.0) adds the top-k SHAP deletion test reported in the AI4Mat camera-ready paper; see [Camera-ready addition: top-k SHAP deletion](#camera-ready-addition-top-k-shap-deletion). It needs no new external data, so the data record stays at version v1.1.0 with the same DOI. Release v1.1.0 contained the code and outputs behind preprint version 2. Relative to v1.0.0 it added the deterministic replay of the frozen Level-1 and Level-2 runs with pre-clip (raw) predictions, two further random seeds (101 and 202), the boosting-round cap sensitivity runs, and formula-grouped cross-validation, together with the scripts that summarize them; see [Preprint version 2 robustness analyses](#preprint-version-2-robustness-analyses). With v1.1.0 the external data record moved to version v1.1.0, which adds the frozen Level-1 feature cache. Where this README and the papers differ, the papers take precedence.
 
 ![Gap-stratified MAE across the representation ladder](figure/bin_mae_level_comparison.png)
 
-## Main findings (preprint version 2)
+## Main findings
 
 Fold means ± population standard deviation across the five official folds (XGBoost limited to 8,000 rounds, seed 42).
 
@@ -27,6 +27,7 @@ Fold means ± population standard deviation across the five official folds (XGBo
 - **Where structure helps.** Predictions for zero-gap materials collapse onto zero, and for compositions that occur in several structures with very different gaps, ALIGNN falls below the error floor of any composition-only model.
 - **Where it does not.** Near the gap boundary, ALIGNN trades errors rather than removing them, placing more gapped materials near zero; in the extreme error tail it is no better than composition alone.
 - **What SHAP does not tell us.** Coordination fingerprints receive the largest SHAP share in the descriptor model (26.2%) but can be deleted without loss, whereas deleting global symmetry, with an 11.8% SHAP share, raises MAE by about 10%. Both results hold across three seeds and when XGBoost is trained to convergence.
+- **Top-k SHAP deletion.** In every fold the top-ranked structural column is `n_symmetry_ops`, the number of symmetry operations. Deleting it alone raises MAE by +0.028 eV, as much as deleting the whole symmetry group. Deleting the next 19 columns as well, which together carry almost three times its SHAP credit, adds little more (+0.030 eV for the top 20). Random deletions change the error only when they include `n_symmetry_ops`.
 - **Robustness of the descriptor gain.** The Level-1-to-Level-2 MAE reduction is 15.6 ± 0.1% across three seeds. It is 12.8% when XGBoost is trained to convergence. Under formula-grouped cross-validation it grows to 17.1%, because random folds let a composition-only model reuse the gaps of same-formula training entries (Section 3.5, SI S14).
 
 
@@ -46,6 +47,7 @@ Use these rules:
 6. Terminal-only verification scripts need no output directory.
 7. `train_ids_export.py` records the one-off step used to add one `train_ids.pkl` file for each of the five official folds. It is retained for provenance only and is not required for ordinary reproduction; do not run it against the frozen release directories.
 8. `make_group_splits.py` refuses to overwrite an existing `groupcv_splits/` directory; the grouped cross-validation notebooks read that shared split and must not regenerate it.
+9. `topk_shap_deletion.py` resumes from an existing `--out-dir`: it skips runs already listed there and rewrites the summary. Give it a new directory, never the released `topk_shap_deletion_structural/`. `mp_gap_v2_export_matrices.ipynb` refuses to overwrite an existing `topk_inputs/l2_matrices.pkl`.
 
 The examples below create a parent run directory but leave each script-specific child directory absent until the corresponding script creates it:
 
@@ -67,7 +69,7 @@ The repository separates numerical verification from feature regeneration and fu
 |---|---|---|---:|
 | Frozen-output analysis | Distributed predictions, labels, SHAP arrays, compact tables | Main metrics, provenance, boundary/tail analysis, repeated-composition oracle, SHAP aggregation, deletion fold audit, seed and round-cap summaries | No |
 | Cache-dependent analysis | `matbench_cache/`, `outputs_v1_run0709/features_cache.pkl`, plus the frozen sources | Featurizer failures, subset robustness, octahedral/TM checks, beeswarm reconstruction, tree replay and descriptor controls | Sometimes |
-| Full retraining | Canonical notebooks or Colab scripts, features/exports, complete environments | Level-1/2 models, deletion/BandCenter controls, seeds, round cap, grouped cross-validation, ALIGNN and angle mask | Yes |
+| Full retraining | Canonical notebooks or Colab scripts, features/exports, complete environments | Level-1/2 models, deletion/BandCenter controls, seeds, round cap, grouped cross-validation, top-k SHAP deletion, ALIGNN and angle mask | Yes |
 
 ### Route A: analyses from frozen outputs
 
@@ -128,6 +130,7 @@ Cache-dependent tasks include:
 - Level-1 + BandCenter training;
 - Level-1 and Level-2 deterministic replay, seed and round-cap runs, and deletion retraining;
 - formula-grouped cross-validation (both caches);
+- top-k SHAP deletion (Level-2 cache);
 - featurizer-failure and subset-robustness checks;
 - octahedral/transition-metal confounding checks;
 - reconstruction of fold-0 SHAP beeswarms.
@@ -210,11 +213,41 @@ All runs below use the frozen feature caches and the canonical preprocessing (fe
 
 **Formula-grouped cross-validation.** `make_group_splits.py` assigns every entry to one of five outer folds with `GroupKFold(n_splits=5)`, grouping by `pymatgen` reduced formula, and draws one inner fit/validation split per outer fold with `GroupShuffleSplit(test_size=0.2, random_state=42)`, also grouped by reduced formula. Both Level-1 and Level-2 read the same files in `groupcv_splits/` (`folds.csv`, `inner_splits.csv`, `split_meta.json`), which also record the software versions and per-fold group counts. The formula overlap is zero between outer training and test entries and between inner fit and validation entries in every fold. Because `test_size` refers to formula groups, the inner validation share of entries differs from 20% and is recorded per fold. Feature means are computed on the outer training fold, as in the canonical runs, so the grouped and official-fold protocols differ in how entries are split, both outer and inner, and in nothing else. `groupcv_results/` contains per-entry predictions for both protocols, with columns `protocol, config, seed, fold, id, formula, formula_count_global, y_true, y_raw, y_clip`; `formula_count_global` is a descriptive count and is not a model input.
 
+## Camera-ready addition: top-k SHAP deletion
+
+Added for the AI4Mat camera-ready paper in response to review, as a direct test of attribution: rank the structural columns by SHAP, delete the top k, and compare with random deletions.
+
+| Analysis | Entry points | Released outputs | Camera-ready item |
+|---|---|---|---|
+| Top-k SHAP deletion with random-k controls | `notebooks/mp_gap_v2_export_matrices.ipynb`, `scripts/topk_shap_deletion.py` | `topk_shap_deletion_structural/` | Section 2 (Setup); Table 3; Appendix A; Appendix C, Table 9 |
+
+**Protocol.** For each official fold, `topk_shap_deletion.py` refits the full Level-2 model (seed 42, 8,000-round limit, the canonical inner split and early stopping) and ranks the 150 structural columns by mean |SHAP|. These are all Level-2 columns except the 132 Magpie features and the composition-derived BandCenter. The ranking uses 3,000 training entries sampled exactly as in the main SHAP analysis, so no test information enters it. The script then deletes the top k columns (k = 1, 5, 10, 20) and retrains the identical pipeline. As controls, it deletes k structural columns drawn at random, three draws per k and fold, each from its own fixed random stream. ΔMAE is paired with the full model of the same fold.
+
+**Inputs and exactness.** `mp_gap_v2_export_matrices.ipynb` is a copy of the Level-2 replay notebook that reads the frozen `matbench_cache/`. It saves, for every fold, the exact one-hot-encoded, aligned and imputed matrices that the canonical notebook passes to XGBoost, without training, to `topk_inputs/l2_matrices.pkl`. That file is several hundred megabytes, above the repository's file-size limit, so it is not distributed; it can be regenerated from the data record in a few minutes. Before any deletion, the script checks that the refitted full model reproduces the frozen Level-2 test predictions (`--reference-pattern`). In every fold the maximum absolute difference was 0 (`reference_check_fold*.json`), so the rankings come from the same models as the published SHAP analysis.
+
+**Outputs.** `topk_results.csv` has one row per fit: fold, configuration, k, draw, number of features, best iteration, MAE, RMSE, the SHAP share of the deleted columns, run time and the deleted column names. `topk_summary.csv` holds the paired fold-level summary, including top-minus-random differences. `shap_ranking_fold*.csv` gives the full ranking of all 283 columns for each fold, and `pool_structural.json` lists the structural pool. Per-entry predictions are not saved.
+
+Two points help when comparing these files with the paper:
+
+- **Imputation.** `run_meta.json` records `"impute": "none"`. This does not mean that missing values were left in place. The exported matrices were already imputed with the outer-training-fold means, exactly as in the canonical notebook, so the script does not impute a second time.
+- **Random controls.** Four of the 60 random draws included `n_symmetry_ops`: fold 0 with k = 5 and k = 20, fold 1 with k = 5, and fold 3 with k = 1. The camera-ready Table 3 reports these four draws separately from the other 56. The random rows of `topk_summary.csv` average all draws for each k, including those four, so their means differ from the values in Table 3. Both can be recomputed from `topk_results.csv` using the `deleted` column.
+
+Command, after restoring `matbench_cache/` and running the export notebook (use a new output directory):
+
+```bash
+cd scripts
+python topk_shap_deletion.py --features-cache ../topk_inputs/l2_matrices.pkl \
+  --out-dir "$REPRO_RUN/topk_shap_deletion" --k 1 5 10 20 \
+  --reference-pattern '../matbench_outputs_v2_run0709/predictions_xgb/pred_fold_{fold}.npy'
+```
+
+The full run takes 85 fits of about 1.5 minutes each on the recorded laptop.
+
 ## Repository map
 
 | Path | Contents |
 |---|---|
-| `notebooks/` | Canonical Level-1 and Level-2 frozen training notebooks, and the version-2 replay, seed, round-cap and grouped cross-validation notebooks |
+| `notebooks/` | Canonical Level-1 and Level-2 frozen training notebooks, the version-2 replay, seed, round-cap and grouped cross-validation notebooks, and the top-k matrix export notebook |
 | `archive/legacy_diagnostic/` | Superseded notebooks and scripts retained only for provenance |
 | `archive/figure/`, `archive/shap/`, `archive/polymorph/` | Version-1 figures and audit outputs superseded by the regenerated version-2 files |
 | `scripts/` | Analysis, audit, replay, control-training, grouped-split, summary, and figure entry points |
@@ -229,6 +262,8 @@ All runs below use the frozen feature caches and the canonical preprocessing (fe
 | `outputs_v1_seed*/`, `matbench_outputs_v2_seed*/`, `matbench_outputs_v2_ablation_*_seed*/` | Seed 101 and 202 predictions, scores, and training-information records |
 | `*_probe50k/` | Training-to-convergence predictions and training-information records (caps of 50,000 or 100,000 rounds, see above; model files not distributed) |
 | `groupcv_splits/`, `outputs_v1_groupcv/`, `matbench_outputs_v2_groupcv/`, `groupcv_results/` | Shared grouped splits with audit metadata, grouped cross-validation outputs, and per-entry prediction tables for both protocols |
+| `topk_shap_deletion_structural/` | Top-k SHAP deletion results: per-run table, summary, per-fold SHAP rankings, reference checks and deletion pools |
+| `topk_inputs/` | Exported Level-2 matrices for the top-k test; regenerated locally with `mp_gap_v2_export_matrices.ipynb`; not tracked in Git |
 | `results_v4/` | Frozen Level-3 raw and clipped per-fold predictions |
 | `result_v4_angle_zero_fold0/` | Fold-0 angle-mask raw and clipped predictions |
 | `matbench_outputs/` | Archived Level-1 and older-imputation Level-2 raw arrays used by the provenance audit |
@@ -343,7 +378,7 @@ The script index should identify the two `run0709.ipynb` notebooks as canonical 
 - The Level-2-to-Level-3 contrast changes representation, learner, optimizer, direct fitting fraction, and training budget.
 - Frozen Level-2 preprocessing shares outer-training covariates with the later internal validation subset; official-test entries remain excluded from all training-stage operations.
 - XGBoost Level-1, Level-2 and deletion runs were repeated with three seeds (42, 101, 202); ALIGNN uses a single seed, and the converged and formula-grouped runs use seed 42. Fold dispersion is not seed variance.
-- Deletion retraining covers two feature groups with one learner and one set of hyperparameters. Both deletion effects, including the small negative coordination response, hold across three seeds and when XGBoost is trained to convergence (SI S14).
+- Deletion retraining covers two feature groups with one learner and one set of hyperparameters. Both deletion effects, including the small negative coordination response, hold across three seeds and when XGBoost is trained to convergence (SI S14). The top-k SHAP deletion test uses one seed, the 8,000-round limit and the structural columns only.
 - SHAP audits training-fold samples and gross coordinatewise magnitudes; it does not measure signed within-group cancellation or out-of-fold explanation stability.
 - Engineered-featurizer failures are non-random.
 - Oracle spread strata are post hoc, intervals are not multiplicity-adjusted, and bootstrap uncertainty excludes refitting, random seeds, and model selection.
@@ -355,7 +390,9 @@ The script index should identify the two `run0709.ipynb` notebooks as canonical 
 
 If you use this repository, please cite the accompanying preprint:
 
-> *What Structure Adds to Band-Gap Prediction, and What SHAP Does Not Tell Us.* Preprint, version 2 (2026); https://doi.org/10.33774/coe-2026-cnz3j.
+> Wanting Xu. *What Structure Adds to Band-Gap Prediction, and What SHAP Does Not Tell Us.* Cambridge Open Engage preprint, version 2 (2026); https://doi.org/10.33774/coe-2026-cnz3j-v2.
+
+A shorter version appears in the AI4Mat-NeurIPS 2026 workshop (Findings, Tools and Open Challenges track).
 
 
 ## License
